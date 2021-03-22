@@ -24,6 +24,9 @@ jobs:
           mkdir -p docs
           ./node_modules/.bin/mmdc -i mermaid/soknadsflyt.mmd -o docs/soknadsflyt.png
           ./node_modules/.bin/mmdc -i mermaid/soknad-innsending.mmd -o docs/soknad-innsending.png
+
+          ./node_modules/.bin/mmdc -i mermaid/soknadsflyt.mmd -o docs/soknadsflyt.svg
+          ./node_modules/.bin/mmdc -i mermaid/soknad-innsending.mmd -o docs/soknad-innsending.svg
       - name: Commit and push generated files
         run: |
           git config --global user.name "digihot-docs[bot]"
