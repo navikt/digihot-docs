@@ -1,0 +1,33 @@
+name: Generate docs
+on:
+  push:
+    paths:
+      - 'docs/*.mmd'
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Generate docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+      - name: Install mermaidjs
+        run: |
+          npm install @mermaid-js/mermaid-cli
+      - name: Generate images from mermaid-files
+        # Legg til nye linjer for nye filer som skal genereres her
+        run: |
+          mkdir -p docs
+          ./node_modules/.bin/mmdc -i mermaid/soknadsflyt.mmd -o docs/soknadsflyt.png
+          ./node_modules/.bin/mmdc -i mermaid/soknad-innsending.mmd -o docs/soknad-innsending.png
+      - name: Commit and push generated files
+        run: |
+          git config --global user.name "digihot-docs[bot]"
+          git config --global user.email "digihot-docs[bot]@noreply.nav.no"
+          git add docs/*
+          git commit -m "Update generated docs"
+          git push
