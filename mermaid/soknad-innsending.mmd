@@ -20,8 +20,8 @@ sequenceDiagram
     hms->>hmsapi: hentUtkast
     
     formidler->>hms: Start ny søknad
+    Note right of formidler: Kan evt fortsette med utkast
     hms->>hmsapi: slettUtkast
-    Note right of hms: Kan evt fortsette med utkast
     
     formidler->>hms: 1-Bruker: Fyller inn fnr
     hms->>hmsapi: hentBrukerdetaljer
