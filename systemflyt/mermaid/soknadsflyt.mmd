@@ -6,14 +6,14 @@ graph TD
     soknad_api -- NySøknadMedFullmakt --> sokbeh_med_fullmkt[hm-soknadsbehandling]
     soknad_api -- NySøknadUtenFullmakt --> sokbeh_uten_fullmkt[hm-soknadsbehandling]
 
-    sokbeh_uten_fullmkt -- SøknadTilGodkjenning --> brukerbek_venter_godkj[hm-brukerbekreftelse]
+    sokbeh_uten_fullmkt -- SøknadTilGodkjenning --> brukerbek_venter_godkj[hm-dinehjelpemidler]
     brukerbek_venter_godkj -. Oppgave .-> dittnav_brukerbekreftelse>DittNAV]
     dittnav_brukerbekreftelse -. SMS/epost: ny oppgave .-> bruker
-    bruker((Bruker)) -. GUI: Bekrefter/Sletter søknad .-> brukerbek_bruker_svar[hm-brukerbekreftelse]
+    bruker((Bruker)) -. GUI: Bekrefter/Sletter søknad .-> brukerbek_bruker_svar[hm-dinehjelpemidler]
     brukerbek_bruker_svar -- GodkjennSøknad --> sokbeh_godkjent[hm-soknadsbehandling]
     
     brukerbek_bruker_svar -- SlettSøknad --> sokbeh_slettet[hm-soknadsbehandling]
-    hmsokbeh_utløpt[hm-soknadsbehandling] -- hm-GodkjenningsfristErUtløpt --> brukerbek_done[hm-brukerbekreftelse]
+    hmsokbeh_utløpt[hm-soknadsbehandling] -- hm-GodkjenningsfristErUtløpt --> brukerbek_done[hm-dinehjelpemidler]
     sokbeh_slettet -- SøknadSlettetAvBruker --> brukerbek_done
     brukerbek_done -. Done .-> dittnav_done>DittNAV]
 
@@ -27,5 +27,5 @@ graph TD
 
     oppgavesink -.-> oebs>OEBS]
     oppgavesink -- hm-OppgaveOpprettet --> sokbeh1
-    oppgavesink -- OppgaveOpprettet --> hmbrukerbekreftelse_oppg_opprettet[hm-brukerbekreftelse]
+    oppgavesink -- OppgaveOpprettet --> hmbrukerbekreftelse_oppg_opprettet[hm-dinehjelpemidler]
     hmbrukerbekreftelse_oppg_opprettet -. Beskjed .-> dittnav_oppg_opprettet>DittNAV]
