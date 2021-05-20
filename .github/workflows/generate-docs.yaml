@@ -21,6 +21,7 @@ jobs:
       - name: Generate images from mermaid-files
         # Legg til nye linjer for nye filer som skal genereres her
         run: |
+          cd systemflyt
           mkdir -p docs
           ./node_modules/.bin/mmdc -i mermaid/soknadsflyt.mmd -o docs/soknadsflyt.svg
           ./node_modules/.bin/mmdc -i mermaid/soknad-innsending.mmd -o docs/soknad-innsending.svg
