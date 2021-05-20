@@ -21,10 +21,9 @@ jobs:
       - name: Generate images from mermaid-files
         # Legg til nye linjer for nye filer som skal genereres her
         run: |
-          cd systemflyt
-          mkdir -p docs
-          ./node_modules/.bin/mmdc -i mermaid/soknadsflyt.mmd -o docs/soknadsflyt.svg
-          ./node_modules/.bin/mmdc -i mermaid/soknad-innsending.mmd -o docs/soknad-innsending.svg
+          mkdir -p systemflyt/docs
+          ./node_modules/.bin/mmdc -i systemflyt/mermaid/soknadsflyt.mmd -o systemflyt/docs/soknadsflyt.svg
+          ./node_modules/.bin/mmdc -i systemflyt/mermaid/soknad-innsending.mmd -o systemflyt/docs/soknad-innsending.svg
       - name: Commit and push generated files
         run: |
           git config --global user.name "digihot-docs[bot]"
