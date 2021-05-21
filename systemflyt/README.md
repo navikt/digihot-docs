@@ -2,16 +2,16 @@
 
 Dokumentasjon for DigiHoT hjelpemiddelsøknad.  
 
-__OBS: Diagrammer i SVG format kan være linket til fra andre repos og nettsider (e.g. Confluence), unngå å endre navn på disse når du oppdaterer diagrammene.__
+__OBS: Diagrammer kan være linket til fra andre repos og nettsider (e.g. Confluence), unngå å endre navn på disse når du oppdaterer diagrammene.__
 
 ## Verktøy
 
 Det er for øyblikket brukt litt ulike verktøy til å tegne diagrammer.
 
-### Diagrams.net
+### (Diagrams.net)[https://www.diagrams.net/]
 Kan lastes ned eller kjøres i nettleser. 
 
-Bruk SVG som filformat og huk av `Include a copy of my diagram` når du lagrer. På den måten kan man senere åpne SVG-filen direkte i appen for å gjøre endringer.
+Bruk SVG eller PNG som filformat og huk av `Include a copy of my diagram` når du lagrer. På den måten kan man senere åpne SVG-filen direkte i appen for å gjøre endringer.
 
 
 ### Mermaidjs
