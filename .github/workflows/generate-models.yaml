@@ -1,0 +1,54 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - modeller/openapi.yaml
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'adopt'
+          java-version: '11'
+      - name: Generate Kotlin models
+        run: |
+          cd modeller
+          wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.1.0/openapi-generator-cli-5.1.0.jar -O openapi-generator-cli.jar
+          java -jar openapi-generator-cli.jar generate \
+              -i openapi.yaml \
+              -g kotlin \
+              -o generated \
+              --additional-properties=enumPropertyNaming=UPPERCASE \
+              --additional-properties=artifactId=datamodel \
+              --additional-properties=groupId=hm-felles \
+              --additional-properties=packageName=no.nav.hjelpemidler.domain \
+              --global-property=models
+      - name: Build
+        run: |
+          cd modeller/generated/
+          ./gradlew build
+      - name: Publish package
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd modeller/generated/
+          ./gradlew publish
+      - name: Commit and push generated files
+        run: |
+          git config --global user.name hm-docs-bot
+          git config --global user.email hm-docs-bot@users.noreply.github.com
+          git status
+          git add modeller/generated/*
+          git status
+          git commit -m "Update generated models"
+          git status
+          git push
