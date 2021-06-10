@@ -46,10 +46,7 @@ jobs:
         run: |
           git config --global user.name hm-docs-bot
           git config --global user.email hm-docs-bot@users.noreply.github.com
-          git status
           git add modeller/generated/docs
           git add modeller/generated/src
-          git status
           git commit -m "Update generated models"
-          git status
           git push
