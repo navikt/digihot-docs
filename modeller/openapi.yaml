@@ -250,5 +250,5 @@ components:
     Dummy:
       type: object
       properties:
-        dummy:
+        dummy2:
           type: string
