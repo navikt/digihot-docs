@@ -1,5 +1,5 @@
 group 'hm-felles'
-version '1.0.0'
+version '1.0.1'
 
 wrapper {
     gradleVersion = '6.8.3'

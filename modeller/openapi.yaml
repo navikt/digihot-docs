@@ -246,3 +246,9 @@ components:
           $ref: "#/components/schemas/Oppfolgingsansvarlig"
         levering:
           $ref: "#/components/schemas/Levering"
+
+    Dummy:
+      type: object
+      properties:
+        dummy:
+          type: string
