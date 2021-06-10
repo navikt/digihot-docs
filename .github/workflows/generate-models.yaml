@@ -22,6 +22,8 @@ jobs:
       - name: Generate Kotlin models
         run: |
           cd modeller
+          rm -r generated-kotlin/src/
+          rm -r generated-kotlin/docs/
           wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.1.0/openapi-generator-cli-5.1.0.jar -O openapi-generator-cli.jar
           java -jar openapi-generator-cli.jar generate \
               -i openapi.yaml \
@@ -32,7 +34,7 @@ jobs:
               --additional-properties=groupId=hm-felles \
               --additional-properties=packageName=no.nav.hjelpemidler.domain \
               --global-property=models
-      - name: Build
+      - name: Build package
         run: |
           cd modeller/generated-kotlin/
           chmod u+x gradlew

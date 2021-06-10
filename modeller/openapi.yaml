@@ -246,3 +246,5 @@ components:
           $ref: "#/components/schemas/Oppfolgingsansvarlig"
         levering:
           $ref: "#/components/schemas/Levering"
+
+
