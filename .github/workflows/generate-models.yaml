@@ -35,6 +35,7 @@ jobs:
       - name: Build
         run: |
           cd modeller/generated-kotlin/
+          chmod u+x gradlew
           ./gradlew build
       - name: Publish package
         env:
