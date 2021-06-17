@@ -45,8 +45,8 @@ publishing {
         mavenJava(MavenPublication) {
 
             pom {
-                name.set("hm-datamodel")
-                description.set("HM Datamodel")
+                name.set("hm-datamodell-kotlin")
+                description.set("Hjelpemiddel datamodel Kotlin")
                 url.set("https://github.com/navikt/hm-docs")
 
                 licenses {
