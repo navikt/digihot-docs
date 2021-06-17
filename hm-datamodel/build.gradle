@@ -28,6 +28,11 @@ test {
     useJUnitPlatform()
 }
 
+java {
+    withSourcesJar()
+}
+
+
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
@@ -36,20 +41,23 @@ dependencies {
     testCompile "io.kotlintest:kotlintest-runner-junit5:3.4.2"
 }
 
-//publishing {
-//    repositories {
-//        maven {
-//            name = "GitHubPackages"
-//            url = uri("https://maven.pkg.github.com/navikt/hm-docs")
-//            credentials {
-//                username = project.findProperty("gpr.user") ?: System.getenv("GITHUB_REPOSITORY")
-//                password = project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN")
-//            }
-//        }
-//    }
-//    publications {
-//        gpr(MavenPublication) {
-//            from(components.kotlin)
-//        }
-//    }
-//}
+publishing {
+   publications {
+        mavenJava(MavenPublication) {
+
+            pom {
+                name.set("hm-datamodel")
+                description.set("HM Datamodel")
+                url.set("https://github.com/navikt/hm-docs")
+
+                licenses {
+                    license {
+                        name.set("Apache License 2.0")
+                        url.set("https://opensource.org/licenses/Apache-2.0")
+                    }
+                }
+            }
+            from(components.kotlin)
+        }
+   }
+}
