@@ -20,7 +20,9 @@ jobs:
           distribution: 'adopt'
           java-version: '11'
       - name: Generate datamodels
-        run: ./generer-datamodeller.sh
+        run: |
+          chmod u+x generer-datamodeller.sh
+          ./generer-datamodeller.sh
       # - name: Build package
       #   run: |
       #     cd hm-datamodell-kotlin
