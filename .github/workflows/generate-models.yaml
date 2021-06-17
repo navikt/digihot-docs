@@ -30,8 +30,8 @@ jobs:
               -g kotlin \
               -o generated-kotlin \
               --additional-properties=enumPropertyNaming=UPPERCASE \
-              --additional-properties=artifactId=datamodel \
-              --additional-properties=groupId=hm-felles \
+              --additional-properties=artifactId=hm-datamodel \
+              --additional-properties=groupId=com.github.navikt \
               --additional-properties=packageName=no.nav.hjelpemidler.domain \
               --global-property=models
       - name: Build package
