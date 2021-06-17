@@ -1,11 +1,11 @@
-name: Build
+name: Generate updated models from openapi.yaml
 
 on:
   push:
     branches:
       - main
     paths:
-      - modeller/openapi.yaml
+      - openapi.yaml
 
 jobs:
   build:
@@ -19,37 +19,24 @@ jobs:
         with:
           distribution: 'adopt'
           java-version: '11'
-      - name: Generate Kotlin models
-        run: |
-          cd modeller
-          rm -r generated-kotlin/src/
-          rm -r generated-kotlin/docs/
-          wget https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.1.0/openapi-generator-cli-5.1.0.jar -O openapi-generator-cli.jar
-          java -jar openapi-generator-cli.jar generate \
-              -i openapi.yaml \
-              -g kotlin \
-              -o generated-kotlin \
-              --additional-properties=enumPropertyNaming=UPPERCASE \
-              --additional-properties=artifactId=hm-datamodel \
-              --additional-properties=groupId=com.github.navikt \
-              --additional-properties=packageName=no.nav.hjelpemidler.domain \
-              --global-property=models
-      - name: Build package
-        run: |
-          cd modeller/generated-kotlin/
-          chmod u+x gradlew
-          ./gradlew build
-      - name: Publish package
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          cd modeller/generated-kotlin/
-          ./gradlew publish
+      - name: Generate datamodels
+        run: ./generer-datamodeller.sh
+      # - name: Build package
+      #   run: |
+      #     cd hm-datamodell-kotlin
+      #     chmod u+x gradlew
+      #     ./gradlew build
+      # - name: Publish package
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     cd hm-datamodell-kotlin
+      #     ./gradlew publish
       - name: Commit and push generated files
         run: |
           git config --global user.name hm-docs-bot
           git config --global user.email hm-docs-bot@users.noreply.github.com
-          git add modeller/generated-kotlin/docs
-          git add modeller/generated-kotlin/src
+          git add hm-datamodell-kotlin/docs
+          git add hm-datamodell-kotlin/src
           git commit -m "Update generated models"
           git push
