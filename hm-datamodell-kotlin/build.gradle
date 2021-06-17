@@ -49,12 +49,12 @@ publishing {
                 description.set("Hjelpemiddel datamodel Kotlin")
                 url.set("https://github.com/navikt/hm-docs")
 
-                licenses {
-                    license {
-                        name.set("Apache License 2.0")
-                        url.set("https://opensource.org/licenses/Apache-2.0")
-                    }
-                }
+                // licenses {
+                //     license {
+                //         name.set("Apache License 2.0")
+                //         url.set("https://opensource.org/licenses/Apache-2.0")
+                //     }
+                // }
             }
             from(components.kotlin)
         }
