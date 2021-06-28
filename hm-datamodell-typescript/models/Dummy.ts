@@ -14,16 +14,16 @@ import { HttpFile } from '../http/http';
 
 export class Dummy {
     /**
-    * used to trigger changes to model while debugging github actions 
+    * used to trigger changes to model while debugging github actions
     */
-    'dummy'?: string;
+    'dummy2'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "dummy",
-            "baseName": "dummy",
+            "name": "dummy2",
+            "baseName": "dummy2",
             "type": "string",
             "format": ""
         }    ];
