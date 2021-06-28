@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { HjelpemiddelRullestolInfo } from './HjelpemiddelRullestolInfo';
 import { HjelpemiddelVilkar } from './HjelpemiddelVilkar';
 import { Tilbehor } from './Tilbehor';
 import { HttpFile } from '../http/http';
@@ -27,6 +28,7 @@ export class Hjelpemiddel {
     'begrunnelse'?: string;
     'kanIkkeTilsvarande'?: boolean;
     'navn'?: string;
+    'rullestolInfo'?: HjelpemiddelRullestolInfo;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -101,6 +103,12 @@ export class Hjelpemiddel {
             "name": "navn",
             "baseName": "navn",
             "type": "string",
+            "format": ""
+        },
+        {
+            "name": "rullestolInfo",
+            "baseName": "rullestolInfo",
+            "type": "HjelpemiddelRullestolInfo",
             "format": ""
         }    ];
 

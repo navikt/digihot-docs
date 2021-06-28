@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **begrunnelse** | **kotlin.String** |  |  [optional]
 **kanIkkeTilsvarande** | **kotlin.Boolean** |  |  [optional]
 **navn** | **kotlin.String** |  |  [optional]
+**rullestolInfo** | [**HjelpemiddelRullestolInfo**](HjelpemiddelRullestolInfo.md) |  |  [optional]
 
 
 
