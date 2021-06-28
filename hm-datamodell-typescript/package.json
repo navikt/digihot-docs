@@ -1,0 +1,17 @@
+{
+  "name": "@navikt/hm-datamodell-typescript",
+  "version": "0.0.1",
+  "description": "OpenAPI modeller for DigiHoT hjelpemiddelsøknad",
+  "author": "OpenAPI-Generator Contributors",
+  "keywords": [],
+  "license": "Unlicense",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.3"
+  }
+}
