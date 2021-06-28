@@ -1,4 +1,4 @@
-name: Publish models
+name: Publish hm-datamodell-typescript to npmjs
 on:
   release:
     types: [published]
@@ -13,24 +13,9 @@ jobs:
         with:
           node-version: '14'
           registry-url: 'https://registry.npmjs.org'
-      - name: Publish
+      - name: Publish hm-datamodell-typescript to npmjs
         run: |
           cd hm-datamodell-typescript
-          echo "cd hm-datamodell-typescript"
-          npm version from-git
-          echo "npm version"
-          git status
-          git config --global user.name hm-docs-bot
-          git config --global user.email hm-docs-bot@users.noreply.github.com
-          echo "git config"
-          git add package.json
-          git add package-lock.json
-          echo "git add"
-          git status
-          git commit -m "Bump hm-datamodell-typescript version"
-          git push
-          echo "git commit og push"
-          npm publish --access public
-          echo "npm publish"
+          npm publish --access public"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

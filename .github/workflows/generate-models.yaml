@@ -27,17 +27,10 @@ jobs:
         uses: navikt/digihot-deploy/actions/pre-deploy@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Build package
-      #   run: |
-      #     cd hm-datamodell-kotlin
-      #     chmod u+x gradlew
-      #     ./gradlew build
-      # - name: Publish package
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: |
-      #     cd hm-datamodell-kotlin
-      #     ./gradlew publish
+      - name: Post-deploy
+        uses: navikt/digihot-deploy/actions/post-deploy@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Commit and push generated files
         run: |
           git config --global user.name hm-docs-bot
@@ -45,12 +38,14 @@ jobs:
           git add hm-datamodell-kotlin/docs
           git add hm-datamodell-kotlin/src
           git add hm-datamodell-typescript/models
+          cd hm-datamodell-typescript
+          echo "cd hm-datamodell-typescript"
+          npm --no-git-tag-version version ${{ env.VERSION_TAG }}
+          echo "npm version"
+          git add package.json
+          git add package-lock.json
           git commit -m "Update generated models"
           git push
-      - name: Post-deploy
-        uses: navikt/digihot-deploy/actions/post-deploy@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create release
         uses: actions/create-release@latest
         env:
