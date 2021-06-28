@@ -16,13 +16,21 @@ jobs:
       - name: Publish
         run: |
           cd hm-datamodell-typescript
+          echo "cd hm-datamodell-typescript"
           npm version from-git
+          echo "npm version"
+          git status
           git config --global user.name hm-docs-bot
           git config --global user.email hm-docs-bot@users.noreply.github.com
+          echo "git config"
           git add package.json
           git add package-lock.json
+          echo "git add"
+          git status
           git commit -m "Bump hm-datamodell-typescript version"
           git push
+          echo "git commit og push"
           npm publish --access public
+          echo "npm publish"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
