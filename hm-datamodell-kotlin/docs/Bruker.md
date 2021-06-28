@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **adresse** | **kotlin.String** |  |  [optional]
 **postnummer** | **kotlin.String** |  |  [optional]
 **poststed** | **kotlin.String** |  |  [optional]
+**kroppsmaal** | [**Kroppsmaal**](Kroppsmaal.md) |  |  [optional]
 
 
 <a name="BoformEnum"></a>

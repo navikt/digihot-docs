@@ -10,6 +10,7 @@
  * Do not edit the class manually.
  */
 
+import { Kroppsmaal } from './Kroppsmaal';
 import { HttpFile } from '../http/http';
 
 export class Bruker {
@@ -24,6 +25,7 @@ export class Bruker {
     'bruksarena': BrukerBruksarenaEnum;
     'funksjonsnedsettelser': Array<BrukerFunksjonsnedsettelserEnum>;
     'signatur': BrukerSignaturEnum;
+    'kroppsmaal'?: Kroppsmaal;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -92,6 +94,12 @@ export class Bruker {
             "name": "signatur",
             "baseName": "signatur",
             "type": "BrukerSignaturEnum",
+            "format": ""
+        },
+        {
+            "name": "kroppsmaal",
+            "baseName": "kroppsmaal",
+            "type": "Kroppsmaal",
             "format": ""
         }    ];
 

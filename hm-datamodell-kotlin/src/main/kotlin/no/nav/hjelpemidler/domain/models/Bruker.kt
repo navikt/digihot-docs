@@ -11,6 +11,7 @@
 */
 package no.nav.hjelpemidler.domain.models
 
+import no.nav.hjelpemidler.domain.models.Kroppsmaal
 
 import com.squareup.moshi.Json
 
@@ -27,6 +28,7 @@ import com.squareup.moshi.Json
  * @param adresse 
  * @param postnummer 
  * @param poststed 
+ * @param kroppsmaal 
  */
 
 data class Bruker (
@@ -51,7 +53,9 @@ data class Bruker (
     @Json(name = "postnummer")
     val postnummer: kotlin.String? = null,
     @Json(name = "poststed")
-    val poststed: kotlin.String? = null
+    val poststed: kotlin.String? = null,
+    @Json(name = "kroppsmaal")
+    val kroppsmaal: Kroppsmaal? = null
 ) {
 
     /**
