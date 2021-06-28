@@ -155,6 +155,12 @@ components:
           properties:
             skalBrukesIBil:
               type: boolean
+            sitteputeValg:
+              type: string
+              enum:
+                - StandardSittepute
+                - LeggesTilSeparat
+                - HarFraFor
     HjelpemiddelVilkar:
       type: object
       required:
