@@ -16,14 +16,14 @@ export class Dummy {
     /**
     * used to trigger changes to model while debugging github actions
     */
-    'dummy2'?: string;
+    'dummy3'?: string;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "dummy2",
-            "baseName": "dummy2",
+            "name": "dummy3",
+            "baseName": "dummy3",
             "type": "string",
             "format": ""
         }    ];
