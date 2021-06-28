@@ -14,6 +14,7 @@ import { HttpFile } from '../http/http';
 
 export class HjelpemiddelRullestolInfo {
     'skalBrukesIBil'?: boolean;
+    'sitteputeValg'?: HjelpemiddelRullestolInfoSitteputeValgEnum;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -22,6 +23,12 @@ export class HjelpemiddelRullestolInfo {
             "name": "skalBrukesIBil",
             "baseName": "skalBrukesIBil",
             "type": "boolean",
+            "format": ""
+        },
+        {
+            "name": "sitteputeValg",
+            "baseName": "sitteputeValg",
+            "type": "HjelpemiddelRullestolInfoSitteputeValgEnum",
             "format": ""
         }    ];
 
@@ -32,4 +39,7 @@ export class HjelpemiddelRullestolInfo {
     public constructor() {
     }
 }
+
+
+export type HjelpemiddelRullestolInfoSitteputeValgEnum = "StandardSittepute" | "LeggesTilSeparat" | "HarFraFor" ;
 
