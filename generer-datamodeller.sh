@@ -23,5 +23,4 @@ java -jar openapi-generator-cli.jar generate \
     -i openapi.yaml \
     -g typescript \
     -o hm-datamodell-typescript \
-    --additional-properties=enumPropertyNaming=UPPERCASE \
-    --global-property=models
+    --additional-properties=enumPropertyNaming=UPPERCASE

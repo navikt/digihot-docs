@@ -16,6 +16,8 @@ jobs:
       - name: Publish hm-datamodell-typescript to npmjs
         run: |
           cd hm-datamodell-typescript
-          npm publish --access public"
+          npm install
+          npm run build
+          npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
