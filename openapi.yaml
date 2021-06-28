@@ -269,6 +269,6 @@ components:
     Dummy:
       type: object
       properties:
-        dummy3: 
+        dummy4: 
           type: string
           description: "used to trigger changes to model while debugging github actions"

@@ -39,9 +39,8 @@ jobs:
           git add hm-datamodell-kotlin/src
           git add hm-datamodell-typescript/models
           cd hm-datamodell-typescript
-          echo "cd hm-datamodell-typescript"
           npm --no-git-tag-version version ${{ env.VERSION_TAG }}
-          echo "npm version"
+          npm install
           git add package.json
           git add package-lock.json
           git commit -m "Update generated models"
