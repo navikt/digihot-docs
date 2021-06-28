@@ -1,22 +1,15 @@
 ## @navikt/hm-datamodell-typescript
 
-This generator creates TypeScript/JavaScript client that utilizes fetch-api. 
+TypeScript-versjon av felles datamodell for DigiHoT Hjelpemiddelsøknad.
 
-### Building
+### Bygg
 
-To build and compile the typescript sources to javascript use:
 ```
 npm install
 npm run build
 ```
 
-### Publishing
-
-First build the package then run ```npm publish --access public```
-
-### Consuming
-
-navigate to the folder of your consuming project and run one of the following commands.
+### Installer
 
 _npm:_
 
