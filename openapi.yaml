@@ -150,6 +150,11 @@ components:
           type: boolean
         navn:
           type: string
+        rullestolInfo:
+          type: object
+          properties:
+            skalBrukesIBil:
+              type: boolean
     HjelpemiddelVilkar:
       type: object
       required:

@@ -23,6 +23,10 @@ jobs:
         run: |
           chmod u+x generer-datamodeller.sh
           ./generer-datamodeller.sh
+      - name: Pre-deploy
+        uses: navikt/digihot-deploy/actions/pre-deploy@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # - name: Build package
       #   run: |
       #     cd hm-datamodell-kotlin
