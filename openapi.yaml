@@ -97,7 +97,7 @@ components:
       type: string
       enum:
         - BEVEGELSE
-        - HØRSEL
+        - HORSEL
         - KOGNISJON
     
     Signatur:
