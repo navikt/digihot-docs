@@ -69,7 +69,7 @@ components:
         poststed:
           type: string
         boform:
-          $ref:  '#/components/schemas/Boform'
+          type: string
         bruksarena:
           $ref: '#/components/schemas/Bruksarena'
         funksjonsnedsettelser:
@@ -80,12 +80,6 @@ components:
             $ref: '#/components/schemas/SignaturType'
         kroppsmaal:
           $ref: '#/components/schemas/Kroppsmaal'
-    
-    Boform:
-      type: string
-      enum:
-        - Hjemme
-        - Institusjon
 
     Bruksarena:
       type: string
