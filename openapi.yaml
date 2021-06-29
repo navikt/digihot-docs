@@ -257,16 +257,19 @@ components:
         kontaktPerson:
           $ref: '#/components/schemas/KontaktPerson'
         leveringsmaate:
-          type: string
-          enum:
-            - FOLKEREGISTRERT_ADRESSE
-            - ANNEN_ADRESSE
-            - HJELPEMIDDELSENTRAL
-            - ALLEREDE_LEVERT
+          $ref: '#/components/schemas/Leveringsmaate'
         adresse:
           type: string
         merknad:
           type: string
+    
+    Leveringsmaate:
+        type: string
+        enum:
+          - FOLKEREGISTRERT_ADRESSE
+          - ANNEN_ADRESSE
+          - HJELPEMIDDELSENTRAL
+          - ALLEREDE_LEVERT
 
     KontaktPerson:
       type: object
