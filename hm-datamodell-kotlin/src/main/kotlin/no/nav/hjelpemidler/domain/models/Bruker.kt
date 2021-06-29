@@ -15,7 +15,7 @@ import no.nav.hjelpemidler.domain.models.Boform
 import no.nav.hjelpemidler.domain.models.Bruksarena
 import no.nav.hjelpemidler.domain.models.Funksjonsnedsettelse
 import no.nav.hjelpemidler.domain.models.Kroppsmaal
-import no.nav.hjelpemidler.domain.models.Signatur
+import no.nav.hjelpemidler.domain.models.SignaturType
 
 import com.squareup.moshi.Json
 
@@ -51,7 +51,7 @@ data class Bruker (
     @Json(name = "funksjonsnedsettelser")
     val funksjonsnedsettelser: kotlin.collections.List<Funksjonsnedsettelse>,
     @Json(name = "signatur")
-    val signatur: Signatur,
+    val signatur: SignaturType,
     @Json(name = "adresse")
     val adresse: kotlin.String? = null,
     @Json(name = "postnummer")

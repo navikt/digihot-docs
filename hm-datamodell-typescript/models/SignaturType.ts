@@ -12,4 +12,4 @@
 
 import { HttpFile } from '../http/http';
 
-export type Signatur = "BRUKER_BEKREFTER" | "FULLMAKT" ;
+export type SignaturType = "BRUKER_BEKREFTER" | "FULLMAKT" ;

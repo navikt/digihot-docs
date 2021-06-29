@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **boform** | [**Boform**](Boform.md) |  | 
 **bruksarena** | [**Bruksarena**](Bruksarena.md) |  | 
 **funksjonsnedsettelser** | [**kotlin.collections.List&lt;Funksjonsnedsettelse&gt;**](Funksjonsnedsettelse.md) |  | 
-**signatur** | [**Signatur**](Signatur.md) |  | 
+**signatur** | [**SignaturType**](SignaturType.md) |  | 
 **adresse** | **kotlin.String** |  |  [optional]
 **postnummer** | **kotlin.String** |  |  [optional]
 **poststed** | **kotlin.String** |  |  [optional]

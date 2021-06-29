@@ -19,7 +19,7 @@ import com.squareup.moshi.Json
 * Values: BRUKER_BEKREFTER,FULLMAKT
 */
 
-enum class Signatur(val value: kotlin.String) {
+enum class SignaturType(val value: kotlin.String) {
 
 
     @Json(name = "BRUKER_BEKREFTER")

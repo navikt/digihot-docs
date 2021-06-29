@@ -1,5 +1,5 @@
 
-# Signatur
+# SignaturType
 
 ## Enum
 

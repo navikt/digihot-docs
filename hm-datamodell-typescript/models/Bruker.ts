@@ -14,7 +14,7 @@ import { Boform } from './Boform';
 import { Bruksarena } from './Bruksarena';
 import { Funksjonsnedsettelse } from './Funksjonsnedsettelse';
 import { Kroppsmaal } from './Kroppsmaal';
-import { Signatur } from './Signatur';
+import { SignaturType } from './SignaturType';
 import { HttpFile } from '../http/http';
 
 export class Bruker {
@@ -28,7 +28,7 @@ export class Bruker {
     'boform': Boform;
     'bruksarena': Bruksarena;
     'funksjonsnedsettelser': Array<Funksjonsnedsettelse>;
-    'signatur': Signatur;
+    'signatur': SignaturType;
     'kroppsmaal'?: Kroppsmaal;
 
     static readonly discriminator: string | undefined = undefined;
@@ -97,7 +97,7 @@ export class Bruker {
         {
             "name": "signatur",
             "baseName": "signatur",
-            "type": "Signatur",
+            "type": "SignaturType",
             "format": ""
         },
         {
