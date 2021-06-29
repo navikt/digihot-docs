@@ -90,8 +90,8 @@ components:
     Bruksarena:
       type: string
       enum:
-        - Dagligliv
-        - Ukjent
+        - DAGLIGLIVET
+        - UKJENT
     
     Funksjonsnedsettelse:
       type: string
