@@ -56,9 +56,9 @@ components:
           items:
             type: string
             enum:
-              - bevegelse
-              - kognisjon
-              - horsel
+              - BEVEGELSE
+              - HØRSEL
+              - KOGNISJON
         signatur:
           type: string
           enum:
