@@ -12,4 +12,4 @@
 
 import { HttpFile } from '../http/http';
 
-export type Bruksarena = "Dagligliv" | "Ukjent" ;
+export type Bruksarena = "DAGLIGLIVET" | "UKJENT" ;

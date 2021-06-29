@@ -4,9 +4,9 @@
 ## Enum
 
 
-    * `DAGLIGLIV` (value: `"Dagligliv"`)
+    * `DAGLIGLIVET` (value: `"DAGLIGLIVET"`)
 
-    * `UKJENT` (value: `"Ukjent"`)
+    * `UKJENT` (value: `"UKJENT"`)
 
 
 

@@ -16,17 +16,17 @@ import com.squareup.moshi.Json
 
 /**
 * 
-* Values: DAGLIGLIV,UKJENT
+* Values: DAGLIGLIVET,UKJENT
 */
 
 enum class Bruksarena(val value: kotlin.String) {
 
 
-    @Json(name = "Dagligliv")
-    DAGLIGLIV("Dagligliv"),
+    @Json(name = "DAGLIGLIVET")
+    DAGLIGLIVET("DAGLIGLIVET"),
 
-    @Json(name = "Ukjent")
-    UKJENT("Ukjent");
+    @Json(name = "UKJENT")
+    UKJENT("UKJENT");
 
 
     /**
