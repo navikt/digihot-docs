@@ -12,4 +12,4 @@
 
 import { HttpFile } from '../http/http';
 
-export type Funksjonsnedsettelse = "BEVEGELSE" | "HØRSEL" | "KOGNISJON" ;
+export type Funksjonsnedsettelse = "BEVEGELSE" | "HORSEL" | "KOGNISJON" ;

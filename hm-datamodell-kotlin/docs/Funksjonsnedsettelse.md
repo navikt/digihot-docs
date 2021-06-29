@@ -6,7 +6,7 @@
 
     * `BEVEGELSE` (value: `"BEVEGELSE"`)
 
-    * `H_RSEL` (value: `"HØRSEL"`)
+    * `HORSEL` (value: `"HORSEL"`)
 
     * `KOGNISJON` (value: `"KOGNISJON"`)
 

@@ -16,7 +16,7 @@ import com.squareup.moshi.Json
 
 /**
 * 
-* Values: BEVEGELSE,H_RSEL,KOGNISJON
+* Values: BEVEGELSE,HORSEL,KOGNISJON
 */
 
 enum class Funksjonsnedsettelse(val value: kotlin.String) {
@@ -25,8 +25,8 @@ enum class Funksjonsnedsettelse(val value: kotlin.String) {
     @Json(name = "BEVEGELSE")
     BEVEGELSE("BEVEGELSE"),
 
-    @Json(name = "HØRSEL")
-    H_RSEL("HØRSEL"),
+    @Json(name = "HORSEL")
+    HORSEL("HORSEL"),
 
     @Json(name = "KOGNISJON")
     KOGNISJON("KOGNISJON");
