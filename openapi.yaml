@@ -9,8 +9,35 @@ paths:
         '200':
           description: OK
           content: {}
+
 components:
   schemas:
+
+    Soknadsdata:
+      type: object
+      required:
+        - bruker
+        - formidler
+        - hjelpemidler
+        - hjelpemiddelTotalAntall
+        - oppfolgingsansvarlig
+        - levering
+      properties:
+        bruker:
+          $ref: '#/components/schemas/Bruker'
+        formidler:
+          $ref: '#/components/schemas/Formidler'
+        hjelpemidler:
+          type: array
+          items:
+            $ref: '#/components/schemas/Hjelpemiddel'
+        hjelpemiddelTotalAntall:
+          type: integer
+        oppfolgingsansvarlig:
+          $ref: '#/components/schemas/Oppfolgingsansvarlig'
+        levering:
+          $ref: '#/components/schemas/Levering'
+
     Bruker:
       type: object
       required:
@@ -42,30 +69,42 @@ components:
         poststed:
           type: string
         boform:
-          type: string
-          enum:
-            - Hjemme
-            - Institusjon
+          $ref:  '#/components/schemas/Boform'
         bruksarena:
-          type: string
-          enum:
-            - Dagligliv
-            - Ukjent
+          $ref: '#/components/schemas/Bruksarena'
         funksjonsnedsettelser:
           type: array
           items:
-            type: string
-            enum:
-              - BEVEGELSE
-              - HØRSEL
-              - KOGNISJON
+            $ref: '#/components/schemas/Funksjonsnedsettelse'
         signatur:
-          type: string
-          enum:
-            - BRUKER_BEKREFTER
-            - FULLMAKT
+            $ref: '#/components/schemas/Signatur'
         kroppsmaal:
-          $ref: "#/components/schemas/Kroppsmaal"
+          $ref: '#/components/schemas/Kroppsmaal'
+    
+    Boform:
+      type: string
+      enum:
+        - Hjemme
+        - Institusjon
+
+    Bruksarena:
+      type: string
+      enum:
+        - Dagligliv
+        - Ukjent
+    
+    Funksjonsnedsettelse:
+      type: string
+      enum:
+        - BEVEGELSE
+        - HØRSEL
+        - KOGNISJON
+    
+    Signatur:
+      type: string
+      enum:
+        - BRUKER_BEKREFTER
+        - FULLMAKT
           
     Kroppsmaal:
       type: object
@@ -102,8 +141,6 @@ components:
           type: string
         telefon:
           type: string
-          minLength: 8
-          maxLength: 8
         treffesEnklest:
           type: string
         epost:
@@ -151,20 +188,8 @@ components:
         navn:
           type: string
         rullestolInfo: 
-          $ref: "#/components/schemas/RullestolInfo"
-
-    RullestolInfo:
-      type: object
-      properties:
-        skalBrukesIBil:
-          type: boolean
-        sitteputeValg:
-          type: string
-          enum:
-            - StandardSittepute
-            - LeggesTilSeparat
-            - HarFraFor
-
+          $ref: '#/components/schemas/RullestolInfo'
+    
     HjelpemiddelVilkar:
       type: object
       required:
@@ -187,6 +212,21 @@ components:
           type: integer
         navn:
           type: string
+
+    RullestolInfo:
+      type: object
+      properties:
+        skalBrukesIBil:
+          type: boolean
+        sitteputeValg:
+          $ref: '#/components/schemas/SitteputeValg'
+    
+    SitteputeValg:
+      type: string
+      enum:
+        - StandardSittepute
+        - LeggesTilSeparat
+        - HarFraFor
 
     Oppfolgingsansvarlig:
       type: object
@@ -244,28 +284,3 @@ components:
             - HJELPEMIDDELFORMIDLER
             - ANNEN_KONTAKTPERSON
             - INGEN_KONTAKTPERSON
-
-    Soknadsdata:
-      type: object
-      required:
-        - bruker
-        - formidler
-        - hjelpemidler
-        - hjelpemiddelTotalAntall
-        - oppfolgingsansvarlig
-        - levering
-      properties:
-        bruker:
-          $ref: '#/components/schemas/Bruker'
-        formidler:
-          $ref: '#/components/schemas/Formidler'
-        hjelpemidler:
-          type: array
-          items:
-            $ref: '#/components/schemas/Hjelpemiddel'
-        hjelpemiddelTotalAntall:
-          type: integer
-        oppfolgingsansvarlig:
-          $ref: '#/components/schemas/Oppfolgingsansvarlig'
-        levering:
-          $ref: '#/components/schemas/Levering'
