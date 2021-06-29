@@ -10,12 +10,13 @@
  * Do not edit the class manually.
  */
 
+import { KontaktpersonType } from './KontaktpersonType';
 import { HttpFile } from '../http/http';
 
 export class KontaktPerson {
     'navn'?: string;
     'telefon'?: string;
-    'kontaktpersonType': KontaktPersonKontaktpersonTypeEnum;
+    'kontaktpersonType': KontaktpersonType;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -35,7 +36,7 @@ export class KontaktPerson {
         {
             "name": "kontaktpersonType",
             "baseName": "kontaktpersonType",
-            "type": "KontaktPersonKontaktpersonTypeEnum",
+            "type": "KontaktpersonType",
             "format": ""
         }    ];
 
@@ -46,7 +47,4 @@ export class KontaktPerson {
     public constructor() {
     }
 }
-
-
-export type KontaktPersonKontaktpersonTypeEnum = "HJELPEMIDDELBRUKER" | "HJELPEMIDDELFORMIDLER" | "ANNEN_KONTAKTPERSON" | "INGEN_KONTAKTPERSON" ;
 

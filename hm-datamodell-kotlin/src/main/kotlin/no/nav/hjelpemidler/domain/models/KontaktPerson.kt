@@ -11,6 +11,7 @@
 */
 package no.nav.hjelpemidler.domain.models
 
+import no.nav.hjelpemidler.domain.models.KontaktpersonType
 
 import com.squareup.moshi.Json
 
@@ -23,22 +24,10 @@ import com.squareup.moshi.Json
 
 data class KontaktPerson (
     @Json(name = "kontaktpersonType")
-    val kontaktpersonType: KontaktPerson.KontaktpersonType,
+    val kontaktpersonType: KontaktpersonType,
     @Json(name = "navn")
     val navn: kotlin.String? = null,
     @Json(name = "telefon")
     val telefon: kotlin.String? = null
-) {
-
-    /**
-     * 
-     * Values: HJELPEMIDDELBRUKER,HJELPEMIDDELFORMIDLER,ANNEN_KONTAKTPERSON,INGEN_KONTAKTPERSON
-     */
-    enum class KontaktpersonType(val value: kotlin.String) {
-        @Json(name = "HJELPEMIDDELBRUKER") HJELPEMIDDELBRUKER("HJELPEMIDDELBRUKER"),
-        @Json(name = "HJELPEMIDDELFORMIDLER") HJELPEMIDDELFORMIDLER("HJELPEMIDDELFORMIDLER"),
-        @Json(name = "ANNEN_KONTAKTPERSON") ANNEN_KONTAKTPERSON("ANNEN_KONTAKTPERSON"),
-        @Json(name = "INGEN_KONTAKTPERSON") INGEN_KONTAKTPERSON("INGEN_KONTAKTPERSON");
-    }
-}
+)
 

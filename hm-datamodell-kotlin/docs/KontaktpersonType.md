@@ -1,0 +1,16 @@
+
+# KontaktpersonType
+
+## Enum
+
+
+    * `HJELPEMIDDELBRUKER` (value: `"HJELPEMIDDELBRUKER"`)
+
+    * `HJELPEMIDDELFORMIDLER` (value: `"HJELPEMIDDELFORMIDLER"`)
+
+    * `ANNEN_KONTAKTPERSON` (value: `"ANNEN_KONTAKTPERSON"`)
+
+    * `INGEN_KONTAKTPERSON` (value: `"INGEN_KONTAKTPERSON"`)
+
+
+
