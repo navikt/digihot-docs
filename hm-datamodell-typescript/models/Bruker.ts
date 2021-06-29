@@ -114,6 +114,6 @@ export class Bruker {
 
 export type BrukerBoformEnum = "Hjemme" | "Institusjon" ;
 export type BrukerBruksarenaEnum = "Dagligliv" | "Ukjent" ;
-export type BrukerFunksjonsnedsettelserEnum = "bevegelse" | "kognisjon" | "horsel" ;
+export type BrukerFunksjonsnedsettelserEnum = "BEVEGELSE" | "HØRSEL" | "KOGNISJON" ;
 export type BrukerSignaturEnum = "BRUKER_BEKREFTER" | "FULLMAKT" ;
 

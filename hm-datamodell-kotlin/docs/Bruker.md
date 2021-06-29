@@ -36,7 +36,7 @@ bruksarena | Dagligliv, Ukjent
 ## Enum: funksjonsnedsettelser
 Name | Value
 ---- | -----
-funksjonsnedsettelser | bevegelse, kognisjon, horsel
+funksjonsnedsettelser | BEVEGELSE, HØRSEL, KOGNISJON
 
 
 <a name="SignaturEnum"></a>

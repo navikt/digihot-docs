@@ -76,12 +76,12 @@ data class Bruker (
     }
     /**
      * 
-     * Values: BEVEGELSE,KOGNISJON,HORSEL
+     * Values: BEVEGELSE,H_RSEL,KOGNISJON
      */
     enum class Funksjonsnedsettelser(val value: kotlin.String) {
-        @Json(name = "bevegelse") BEVEGELSE("bevegelse"),
-        @Json(name = "kognisjon") KOGNISJON("kognisjon"),
-        @Json(name = "horsel") HORSEL("horsel");
+        @Json(name = "BEVEGELSE") BEVEGELSE("BEVEGELSE"),
+        @Json(name = "HØRSEL") H_RSEL("HØRSEL"),
+        @Json(name = "KOGNISJON") KOGNISJON("KOGNISJON");
     }
     /**
      * 
