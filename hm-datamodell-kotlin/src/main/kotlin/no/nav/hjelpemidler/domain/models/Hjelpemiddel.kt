@@ -11,8 +11,8 @@
 */
 package no.nav.hjelpemidler.domain.models
 
-import no.nav.hjelpemidler.domain.models.HjelpemiddelRullestolInfo
 import no.nav.hjelpemidler.domain.models.HjelpemiddelVilkar
+import no.nav.hjelpemidler.domain.models.RullestolInfo
 import no.nav.hjelpemidler.domain.models.Tilbehor
 
 import com.squareup.moshi.Json
@@ -60,6 +60,6 @@ data class Hjelpemiddel (
     @Json(name = "navn")
     val navn: kotlin.String? = null,
     @Json(name = "rullestolInfo")
-    val rullestolInfo: HjelpemiddelRullestolInfo? = null
+    val rullestolInfo: RullestolInfo? = null
 )
 

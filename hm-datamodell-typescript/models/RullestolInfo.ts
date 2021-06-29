@@ -12,38 +12,34 @@
 
 import { HttpFile } from '../http/http';
 
-export class BrukerFunksjonsnedsettelser {
-    'bevegelse'?: boolean;
-    'kognisjon'?: boolean;
-    'horsel'?: boolean;
+export class RullestolInfo {
+    'skalBrukesIBil'?: boolean;
+    'sitteputeValg'?: RullestolInfoSitteputeValgEnum;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "bevegelse",
-            "baseName": "bevegelse",
+            "name": "skalBrukesIBil",
+            "baseName": "skalBrukesIBil",
             "type": "boolean",
             "format": ""
         },
         {
-            "name": "kognisjon",
-            "baseName": "kognisjon",
-            "type": "boolean",
-            "format": ""
-        },
-        {
-            "name": "horsel",
-            "baseName": "horsel",
-            "type": "boolean",
+            "name": "sitteputeValg",
+            "baseName": "sitteputeValg",
+            "type": "RullestolInfoSitteputeValgEnum",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return BrukerFunksjonsnedsettelser.attributeTypeMap;
+        return RullestolInfo.attributeTypeMap;
     }
     
     public constructor() {
     }
 }
+
+
+export type RullestolInfoSitteputeValgEnum = "StandardSittepute" | "LeggesTilSeparat" | "HarFraFor" ;
 

@@ -1,5 +1,5 @@
 
-# HjelpemiddelRullestolInfo
+# RullestolInfo
 
 ## Properties
 Name | Type | Description | Notes

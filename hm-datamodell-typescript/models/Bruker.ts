@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-import { BrukerFunksjonsnedsettelser } from './BrukerFunksjonsnedsettelser';
 import { Kroppsmaal } from './Kroppsmaal';
 import { HttpFile } from '../http/http';
 
@@ -24,7 +23,7 @@ export class Bruker {
     'poststed'?: string;
     'boform': BrukerBoformEnum;
     'bruksarena': BrukerBruksarenaEnum;
-    'funksjonsnedsettelser': BrukerFunksjonsnedsettelser;
+    'funksjonsnedsettelser': Array<BrukerFunksjonsnedsettelserEnum>;
     'signatur': BrukerSignaturEnum;
     'kroppsmaal'?: Kroppsmaal;
 
@@ -88,7 +87,7 @@ export class Bruker {
         {
             "name": "funksjonsnedsettelser",
             "baseName": "funksjonsnedsettelser",
-            "type": "BrukerFunksjonsnedsettelser",
+            "type": "Array<BrukerFunksjonsnedsettelserEnum>",
             "format": ""
         },
         {
@@ -115,5 +114,6 @@ export class Bruker {
 
 export type BrukerBoformEnum = "Hjemme" | "Institusjon" ;
 export type BrukerBruksarenaEnum = "Dagligliv" | "Ukjent" ;
+export type BrukerFunksjonsnedsettelserEnum = "bevegelse" | "kognisjon" | "horsel" ;
 export type BrukerSignaturEnum = "BRUKER_BEKREFTER" | "FULLMAKT" ;
 

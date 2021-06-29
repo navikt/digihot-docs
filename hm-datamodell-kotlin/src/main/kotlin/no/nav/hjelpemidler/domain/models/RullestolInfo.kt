@@ -20,11 +20,11 @@ import com.squareup.moshi.Json
  * @param sitteputeValg 
  */
 
-data class HjelpemiddelRullestolInfo (
+data class RullestolInfo (
     @Json(name = "skalBrukesIBil")
     val skalBrukesIBil: kotlin.Boolean? = null,
     @Json(name = "sitteputeValg")
-    val sitteputeValg: HjelpemiddelRullestolInfo.SitteputeValg? = null
+    val sitteputeValg: RullestolInfo.SitteputeValg? = null
 ) {
 
     /**

@@ -11,7 +11,6 @@
 */
 package no.nav.hjelpemidler.domain.models
 
-import no.nav.hjelpemidler.domain.models.BrukerFunksjonsnedsettelser
 import no.nav.hjelpemidler.domain.models.Kroppsmaal
 
 import com.squareup.moshi.Json
@@ -46,7 +45,7 @@ data class Bruker (
     @Json(name = "bruksarena")
     val bruksarena: Bruker.Bruksarena,
     @Json(name = "funksjonsnedsettelser")
-    val funksjonsnedsettelser: BrukerFunksjonsnedsettelser,
+    val funksjonsnedsettelser: kotlin.collections.List<Bruker.Funksjonsnedsettelser>,
     @Json(name = "signatur")
     val signatur: Bruker.Signatur,
     @Json(name = "adresse")
@@ -74,6 +73,15 @@ data class Bruker (
     enum class Bruksarena(val value: kotlin.String) {
         @Json(name = "Dagligliv") DAGLIGLIV("Dagligliv"),
         @Json(name = "Ukjent") UKJENT("Ukjent");
+    }
+    /**
+     * 
+     * Values: BEVEGELSE,KOGNISJON,HORSEL
+     */
+    enum class Funksjonsnedsettelser(val value: kotlin.String) {
+        @Json(name = "bevegelse") BEVEGELSE("bevegelse"),
+        @Json(name = "kognisjon") KOGNISJON("kognisjon"),
+        @Json(name = "horsel") HORSEL("horsel");
     }
     /**
      * 
