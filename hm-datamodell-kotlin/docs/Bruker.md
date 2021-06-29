@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **telefonNummer** | **kotlin.String** |  | 
 **boform** | [**inline**](#BoformEnum) |  | 
 **bruksarena** | [**inline**](#BruksarenaEnum) |  | 
-**funksjonsnedsettelser** | [**inline**](#kotlin.collections.List&lt;FunksjonsnedsettelserEnum&gt;) |  | 
+**funksjonsnedsettelser** | [**BrukerFunksjonsnedsettelser**](BrukerFunksjonsnedsettelser.md) |  | 
 **signatur** | [**inline**](#SignaturEnum) |  | 
 **adresse** | **kotlin.String** |  |  [optional]
 **postnummer** | **kotlin.String** |  |  [optional]
@@ -32,18 +32,11 @@ Name | Value
 bruksarena | Dagligliv, Ukjent
 
 
-<a name="kotlin.collections.List<FunksjonsnedsettelserEnum>"></a>
-## Enum: funksjonsnedsettelser
-Name | Value
----- | -----
-funksjonsnedsettelser | Bevegelse, Hørsel, Kognisjon
-
-
 <a name="SignaturEnum"></a>
 ## Enum: signatur
 Name | Value
 ---- | -----
-signatur | Fullmakt, Brukerbekreftelse
+signatur | BRUKER_BEKREFTER, FULLMAKT
 
 
 

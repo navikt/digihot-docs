@@ -21,10 +21,10 @@ import com.squareup.moshi.Json
  * 
  * @param antall 
  * @param beskrivelse 
+ * @param hjelpemiddelkategori 
  * @param hmsNr 
  * @param tilleggsinformasjon 
  * @param utlevertFraHjelpemiddelsentralen 
- * @param hjelpemiddelkategori 
  * @param rangering 
  * @param vilkarliste 
  * @param tilbehorListe 
@@ -39,14 +39,14 @@ data class Hjelpemiddel (
     val antall: kotlin.Int,
     @Json(name = "beskrivelse")
     val beskrivelse: kotlin.String,
+    @Json(name = "hjelpemiddelkategori")
+    val hjelpemiddelkategori: kotlin.String,
     @Json(name = "hmsNr")
     val hmsNr: kotlin.String,
     @Json(name = "tilleggsinformasjon")
     val tilleggsinformasjon: kotlin.String,
     @Json(name = "utlevertFraHjelpemiddelsentralen")
     val utlevertFraHjelpemiddelsentralen: kotlin.Boolean,
-    @Json(name = "hjelpemiddelkategori")
-    val hjelpemiddelkategori: kotlin.String? = null,
     @Json(name = "rangering")
     val rangering: kotlin.String? = null,
     @Json(name = "vilkarliste")

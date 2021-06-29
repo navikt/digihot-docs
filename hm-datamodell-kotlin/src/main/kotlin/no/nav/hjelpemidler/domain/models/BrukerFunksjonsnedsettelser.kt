@@ -16,12 +16,17 @@ import com.squareup.moshi.Json
 
 /**
  * 
- * @param dummy6 used to trigger changes to model while debugging github actions
+ * @param bevegelse 
+ * @param kognisjon 
+ * @param horsel 
  */
 
-data class Dummy (
-    /* used to trigger changes to model while debugging github actions */
-    @Json(name = "dummy6")
-    val dummy6: kotlin.String? = null
+data class BrukerFunksjonsnedsettelser (
+    @Json(name = "bevegelse")
+    val bevegelse: kotlin.Boolean? = null,
+    @Json(name = "kognisjon")
+    val kognisjon: kotlin.Boolean? = null,
+    @Json(name = "horsel")
+    val horsel: kotlin.Boolean? = null
 )
 

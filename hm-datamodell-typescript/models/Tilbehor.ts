@@ -14,7 +14,7 @@ import { HttpFile } from '../http/http';
 
 export class Tilbehor {
     'hmsnr': string;
-    'antall': number;
+    'antall'?: number;
     'navn': string;
 
     static readonly discriminator: string | undefined = undefined;

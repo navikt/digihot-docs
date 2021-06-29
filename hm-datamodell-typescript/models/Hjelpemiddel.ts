@@ -18,7 +18,7 @@ import { HttpFile } from '../http/http';
 export class Hjelpemiddel {
     'antall': number;
     'beskrivelse': string;
-    'hjelpemiddelkategori'?: string;
+    'hjelpemiddelkategori': string;
     'hmsNr': string;
     'tilleggsinformasjon': string;
     'rangering'?: string;

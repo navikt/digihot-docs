@@ -12,24 +12,35 @@
 
 import { HttpFile } from '../http/http';
 
-export class Dummy {
-    /**
-    * used to trigger changes to model while debugging github actions
-    */
-    'dummy6'?: string;
+export class BrukerFunksjonsnedsettelser {
+    'bevegelse'?: boolean;
+    'kognisjon'?: boolean;
+    'horsel'?: boolean;
 
     static readonly discriminator: string | undefined = undefined;
 
     static readonly attributeTypeMap: Array<{name: string, baseName: string, type: string, format: string}> = [
         {
-            "name": "dummy6",
-            "baseName": "dummy6",
-            "type": "string",
+            "name": "bevegelse",
+            "baseName": "bevegelse",
+            "type": "boolean",
+            "format": ""
+        },
+        {
+            "name": "kognisjon",
+            "baseName": "kognisjon",
+            "type": "boolean",
+            "format": ""
+        },
+        {
+            "name": "horsel",
+            "baseName": "horsel",
+            "type": "boolean",
             "format": ""
         }    ];
 
     static getAttributeTypeMap() {
-        return Dummy.attributeTypeMap;
+        return BrukerFunksjonsnedsettelser.attributeTypeMap;
     }
     
     public constructor() {

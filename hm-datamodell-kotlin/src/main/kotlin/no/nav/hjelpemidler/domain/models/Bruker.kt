@@ -11,6 +11,7 @@
 */
 package no.nav.hjelpemidler.domain.models
 
+import no.nav.hjelpemidler.domain.models.BrukerFunksjonsnedsettelser
 import no.nav.hjelpemidler.domain.models.Kroppsmaal
 
 import com.squareup.moshi.Json
@@ -45,7 +46,7 @@ data class Bruker (
     @Json(name = "bruksarena")
     val bruksarena: Bruker.Bruksarena,
     @Json(name = "funksjonsnedsettelser")
-    val funksjonsnedsettelser: kotlin.collections.List<Bruker.Funksjonsnedsettelser>,
+    val funksjonsnedsettelser: BrukerFunksjonsnedsettelser,
     @Json(name = "signatur")
     val signatur: Bruker.Signatur,
     @Json(name = "adresse")
@@ -76,20 +77,11 @@ data class Bruker (
     }
     /**
      * 
-     * Values: BEVEGELSE,H_RSEL,KOGNISJON
-     */
-    enum class Funksjonsnedsettelser(val value: kotlin.String) {
-        @Json(name = "Bevegelse") BEVEGELSE("Bevegelse"),
-        @Json(name = "Hørsel") H_RSEL("Hørsel"),
-        @Json(name = "Kognisjon") KOGNISJON("Kognisjon");
-    }
-    /**
-     * 
-     * Values: FULLMAKT,BRUKERBEKREFTELSE
+     * Values: BRUKER_BEKREFTER,FULLMAKT
      */
     enum class Signatur(val value: kotlin.String) {
-        @Json(name = "Fullmakt") FULLMAKT("Fullmakt"),
-        @Json(name = "Brukerbekreftelse") BRUKERBEKREFTELSE("Brukerbekreftelse");
+        @Json(name = "BRUKER_BEKREFTER") BRUKER_BEKREFTER("BRUKER_BEKREFTER"),
+        @Json(name = "FULLMAKT") FULLMAKT("FULLMAKT");
     }
 }
 

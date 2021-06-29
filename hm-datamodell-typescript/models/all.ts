@@ -1,5 +1,5 @@
 export * from './Bruker'
-export * from './Dummy'
+export * from './BrukerFunksjonsnedsettelser'
 export * from './Formidler'
 export * from './Hjelpemiddel'
 export * from './HjelpemiddelRullestolInfo'

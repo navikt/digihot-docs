@@ -17,16 +17,16 @@ import com.squareup.moshi.Json
 /**
  * 
  * @param hmsnr 
- * @param antall 
  * @param navn 
+ * @param antall 
  */
 
 data class Tilbehor (
     @Json(name = "hmsnr")
     val hmsnr: kotlin.String,
-    @Json(name = "antall")
-    val antall: kotlin.Int,
     @Json(name = "navn")
-    val navn: kotlin.String
+    val navn: kotlin.String,
+    @Json(name = "antall")
+    val antall: kotlin.Int? = null
 )
 
