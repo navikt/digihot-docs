@@ -10,7 +10,11 @@
  * Do not edit the class manually.
  */
 
+import { Boform } from './Boform';
+import { Bruksarena } from './Bruksarena';
+import { Funksjonsnedsettelse } from './Funksjonsnedsettelse';
 import { Kroppsmaal } from './Kroppsmaal';
+import { Signatur } from './Signatur';
 import { HttpFile } from '../http/http';
 
 export class Bruker {
@@ -21,10 +25,10 @@ export class Bruker {
     'adresse'?: string;
     'postnummer'?: string;
     'poststed'?: string;
-    'boform': BrukerBoformEnum;
-    'bruksarena': BrukerBruksarenaEnum;
-    'funksjonsnedsettelser': Array<BrukerFunksjonsnedsettelserEnum>;
-    'signatur': BrukerSignaturEnum;
+    'boform': Boform;
+    'bruksarena': Bruksarena;
+    'funksjonsnedsettelser': Array<Funksjonsnedsettelse>;
+    'signatur': Signatur;
     'kroppsmaal'?: Kroppsmaal;
 
     static readonly discriminator: string | undefined = undefined;
@@ -75,25 +79,25 @@ export class Bruker {
         {
             "name": "boform",
             "baseName": "boform",
-            "type": "BrukerBoformEnum",
+            "type": "Boform",
             "format": ""
         },
         {
             "name": "bruksarena",
             "baseName": "bruksarena",
-            "type": "BrukerBruksarenaEnum",
+            "type": "Bruksarena",
             "format": ""
         },
         {
             "name": "funksjonsnedsettelser",
             "baseName": "funksjonsnedsettelser",
-            "type": "Array<BrukerFunksjonsnedsettelserEnum>",
+            "type": "Array<Funksjonsnedsettelse>",
             "format": ""
         },
         {
             "name": "signatur",
             "baseName": "signatur",
-            "type": "BrukerSignaturEnum",
+            "type": "Signatur",
             "format": ""
         },
         {
@@ -110,10 +114,4 @@ export class Bruker {
     public constructor() {
     }
 }
-
-
-export type BrukerBoformEnum = "Hjemme" | "Institusjon" ;
-export type BrukerBruksarenaEnum = "Dagligliv" | "Ukjent" ;
-export type BrukerFunksjonsnedsettelserEnum = "BEVEGELSE" | "HØRSEL" | "KOGNISJON" ;
-export type BrukerSignaturEnum = "BRUKER_BEKREFTER" | "FULLMAKT" ;
 

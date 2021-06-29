@@ -11,6 +11,7 @@
 */
 package no.nav.hjelpemidler.domain.models
 
+import no.nav.hjelpemidler.domain.models.SitteputeValg
 
 import com.squareup.moshi.Json
 
@@ -24,17 +25,6 @@ data class RullestolInfo (
     @Json(name = "skalBrukesIBil")
     val skalBrukesIBil: kotlin.Boolean? = null,
     @Json(name = "sitteputeValg")
-    val sitteputeValg: RullestolInfo.SitteputeValg? = null
-) {
-
-    /**
-     * 
-     * Values: STANDARD_SITTEPUTE,LEGGES_TIL_SEPARAT,HAR_FRA_FOR
-     */
-    enum class SitteputeValg(val value: kotlin.String) {
-        @Json(name = "StandardSittepute") STANDARD_SITTEPUTE("StandardSittepute"),
-        @Json(name = "LeggesTilSeparat") LEGGES_TIL_SEPARAT("LeggesTilSeparat"),
-        @Json(name = "HarFraFor") HAR_FRA_FOR("HarFraFor");
-    }
-}
+    val sitteputeValg: SitteputeValg? = null
+)
 

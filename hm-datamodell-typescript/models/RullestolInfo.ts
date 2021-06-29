@@ -10,11 +10,12 @@
  * Do not edit the class manually.
  */
 
+import { SitteputeValg } from './SitteputeValg';
 import { HttpFile } from '../http/http';
 
 export class RullestolInfo {
     'skalBrukesIBil'?: boolean;
-    'sitteputeValg'?: RullestolInfoSitteputeValgEnum;
+    'sitteputeValg'?: SitteputeValg;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -28,7 +29,7 @@ export class RullestolInfo {
         {
             "name": "sitteputeValg",
             "baseName": "sitteputeValg",
-            "type": "RullestolInfoSitteputeValgEnum",
+            "type": "SitteputeValg",
             "format": ""
         }    ];
 
@@ -39,7 +40,4 @@ export class RullestolInfo {
     public constructor() {
     }
 }
-
-
-export type RullestolInfoSitteputeValgEnum = "StandardSittepute" | "LeggesTilSeparat" | "HarFraFor" ;
 

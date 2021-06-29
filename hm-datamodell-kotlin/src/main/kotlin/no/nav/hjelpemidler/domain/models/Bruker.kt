@@ -11,7 +11,11 @@
 */
 package no.nav.hjelpemidler.domain.models
 
+import no.nav.hjelpemidler.domain.models.Boform
+import no.nav.hjelpemidler.domain.models.Bruksarena
+import no.nav.hjelpemidler.domain.models.Funksjonsnedsettelse
 import no.nav.hjelpemidler.domain.models.Kroppsmaal
+import no.nav.hjelpemidler.domain.models.Signatur
 
 import com.squareup.moshi.Json
 
@@ -41,13 +45,13 @@ data class Bruker (
     @Json(name = "telefonNummer")
     val telefonNummer: kotlin.String,
     @Json(name = "boform")
-    val boform: Bruker.Boform,
+    val boform: Boform,
     @Json(name = "bruksarena")
-    val bruksarena: Bruker.Bruksarena,
+    val bruksarena: Bruksarena,
     @Json(name = "funksjonsnedsettelser")
-    val funksjonsnedsettelser: kotlin.collections.List<Bruker.Funksjonsnedsettelser>,
+    val funksjonsnedsettelser: kotlin.collections.List<Funksjonsnedsettelse>,
     @Json(name = "signatur")
-    val signatur: Bruker.Signatur,
+    val signatur: Signatur,
     @Json(name = "adresse")
     val adresse: kotlin.String? = null,
     @Json(name = "postnummer")
@@ -56,40 +60,5 @@ data class Bruker (
     val poststed: kotlin.String? = null,
     @Json(name = "kroppsmaal")
     val kroppsmaal: Kroppsmaal? = null
-) {
-
-    /**
-     * 
-     * Values: HJEMME,INSTITUSJON
-     */
-    enum class Boform(val value: kotlin.String) {
-        @Json(name = "Hjemme") HJEMME("Hjemme"),
-        @Json(name = "Institusjon") INSTITUSJON("Institusjon");
-    }
-    /**
-     * 
-     * Values: DAGLIGLIV,UKJENT
-     */
-    enum class Bruksarena(val value: kotlin.String) {
-        @Json(name = "Dagligliv") DAGLIGLIV("Dagligliv"),
-        @Json(name = "Ukjent") UKJENT("Ukjent");
-    }
-    /**
-     * 
-     * Values: BEVEGELSE,H_RSEL,KOGNISJON
-     */
-    enum class Funksjonsnedsettelser(val value: kotlin.String) {
-        @Json(name = "BEVEGELSE") BEVEGELSE("BEVEGELSE"),
-        @Json(name = "HØRSEL") H_RSEL("HØRSEL"),
-        @Json(name = "KOGNISJON") KOGNISJON("KOGNISJON");
-    }
-    /**
-     * 
-     * Values: BRUKER_BEKREFTER,FULLMAKT
-     */
-    enum class Signatur(val value: kotlin.String) {
-        @Json(name = "BRUKER_BEKREFTER") BRUKER_BEKREFTER("BRUKER_BEKREFTER"),
-        @Json(name = "FULLMAKT") FULLMAKT("FULLMAKT");
-    }
-}
+)
 
