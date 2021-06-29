@@ -54,18 +54,19 @@ components:
             - Dagligliv
             - Ukjent
         funksjonsnedsettelser:
-          type: array
-          items:
-            type: string
-            enum:
-              - Bevegelse
-              - Hørsel
-              - Kognisjon
+          type: object
+          properties:
+            bevegelse:
+              type: boolean
+            kognisjon:
+              type: boolean
+            horsel:
+              type: boolean
         signatur:
           type: string
           enum:
-            - Fullmakt
-            - Brukerbekreftelse
+            - BRUKER_BEKREFTER
+            - FULLMAKT
         kroppsmaal:
           $ref: "#/components/schemas/Kroppsmaal"
           
@@ -117,6 +118,7 @@ components:
       required:
         - antall
         - beskrivelse
+        - hjelpemiddelkategori
         - hmsNr
         - tilleggsinformasjon
         - utlevertFraHjelpemiddelsentralen
@@ -174,14 +176,12 @@ components:
       type: object
       required:
         - hmsnr
-        - antall
         - navn
       properties:
         hmsnr:
           type: string
         antall:
           type: integer
-          minimum: 1
         navn:
           type: string
     Oppfolgingsansvarlig:
@@ -201,8 +201,6 @@ components:
           type: string
         telefon:
           type: string
-          minLength: 8
-          maxLength: 8
         ansvarFor:
           type: string
     Levering:
@@ -233,8 +231,6 @@ components:
           type: string
         telefon:
           type: string
-          minLength: 8
-          maxLength: 8
         kontaktpersonType:
           type: string
           enum:
@@ -266,9 +262,3 @@ components:
           $ref: '#/components/schemas/Oppfolgingsansvarlig'
         levering:
           $ref: '#/components/schemas/Levering'
-    Dummy:
-      type: object
-      properties:
-        dummy6: 
-          type: string
-          description: "used to trigger changes to model while debugging github actions"
