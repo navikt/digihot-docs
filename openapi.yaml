@@ -77,7 +77,7 @@ components:
           items:
             $ref: '#/components/schemas/Funksjonsnedsettelse'
         signatur:
-            $ref: '#/components/schemas/Signatur'
+            $ref: '#/components/schemas/SignaturType'
         kroppsmaal:
           $ref: '#/components/schemas/Kroppsmaal'
     
@@ -100,7 +100,7 @@ components:
         - HORSEL
         - KOGNISJON
     
-    Signatur:
+    SignaturType:
       type: string
       enum:
         - BRUKER_BEKREFTER
