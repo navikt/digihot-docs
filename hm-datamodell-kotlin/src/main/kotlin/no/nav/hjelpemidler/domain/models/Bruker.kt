@@ -11,7 +11,6 @@
 */
 package no.nav.hjelpemidler.domain.models
 
-import no.nav.hjelpemidler.domain.models.Boform
 import no.nav.hjelpemidler.domain.models.Bruksarena
 import no.nav.hjelpemidler.domain.models.Funksjonsnedsettelse
 import no.nav.hjelpemidler.domain.models.Kroppsmaal
@@ -45,7 +44,7 @@ data class Bruker (
     @Json(name = "telefonNummer")
     val telefonNummer: kotlin.String,
     @Json(name = "boform")
-    val boform: Boform,
+    val boform: kotlin.String,
     @Json(name = "bruksarena")
     val bruksarena: Bruksarena,
     @Json(name = "funksjonsnedsettelser")

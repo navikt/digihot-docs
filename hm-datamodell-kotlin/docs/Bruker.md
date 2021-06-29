@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **fornavn** | **kotlin.String** |  | 
 **fnummer** | **kotlin.String** |  | 
 **telefonNummer** | **kotlin.String** |  | 
-**boform** | [**Boform**](Boform.md) |  | 
+**boform** | **kotlin.String** |  | 
 **bruksarena** | [**Bruksarena**](Bruksarena.md) |  | 
 **funksjonsnedsettelser** | [**kotlin.collections.List&lt;Funksjonsnedsettelse&gt;**](Funksjonsnedsettelse.md) |  | 
 **signatur** | [**SignaturType**](SignaturType.md) |  | 

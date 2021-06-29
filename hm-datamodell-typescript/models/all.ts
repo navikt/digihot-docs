@@ -1,4 +1,3 @@
-export * from './Boform'
 export * from './Bruker'
 export * from './Bruksarena'
 export * from './Formidler'

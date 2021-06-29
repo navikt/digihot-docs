@@ -10,7 +10,6 @@
  * Do not edit the class manually.
  */
 
-import { Boform } from './Boform';
 import { Bruksarena } from './Bruksarena';
 import { Funksjonsnedsettelse } from './Funksjonsnedsettelse';
 import { Kroppsmaal } from './Kroppsmaal';
@@ -25,7 +24,7 @@ export class Bruker {
     'adresse'?: string;
     'postnummer'?: string;
     'poststed'?: string;
-    'boform': Boform;
+    'boform': string;
     'bruksarena': Bruksarena;
     'funksjonsnedsettelser': Array<Funksjonsnedsettelse>;
     'signatur': SignaturType;
@@ -79,7 +78,7 @@ export class Bruker {
         {
             "name": "boform",
             "baseName": "boform",
-            "type": "Boform",
+            "type": "string",
             "format": ""
         },
         {
