@@ -1,6 +1,6 @@
 {
   "name": "@navikt/hm-datamodell-typescript",
-  "version": "21.180.161105",
+  "version": "21.180.163017",
   "description": "OpenAPI modeller for DigiHoT hjelpemiddelsøknad",
   "author": "OpenAPI-Generator Contributors",
   "keywords": [],

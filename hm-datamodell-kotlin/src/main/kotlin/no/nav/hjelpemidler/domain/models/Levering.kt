@@ -12,6 +12,7 @@
 package no.nav.hjelpemidler.domain.models
 
 import no.nav.hjelpemidler.domain.models.KontaktPerson
+import no.nav.hjelpemidler.domain.models.Leveringsmaate
 
 import com.squareup.moshi.Json
 
@@ -27,22 +28,10 @@ data class Levering (
     @Json(name = "kontaktPerson")
     val kontaktPerson: KontaktPerson,
     @Json(name = "leveringsmaate")
-    val leveringsmaate: Levering.Leveringsmaate,
+    val leveringsmaate: Leveringsmaate,
     @Json(name = "adresse")
     val adresse: kotlin.String? = null,
     @Json(name = "merknad")
     val merknad: kotlin.String? = null
-) {
-
-    /**
-     * 
-     * Values: FOLKEREGISTRERT_ADRESSE,ANNEN_ADRESSE,HJELPEMIDDELSENTRAL,ALLEREDE_LEVERT
-     */
-    enum class Leveringsmaate(val value: kotlin.String) {
-        @Json(name = "FOLKEREGISTRERT_ADRESSE") FOLKEREGISTRERT_ADRESSE("FOLKEREGISTRERT_ADRESSE"),
-        @Json(name = "ANNEN_ADRESSE") ANNEN_ADRESSE("ANNEN_ADRESSE"),
-        @Json(name = "HJELPEMIDDELSENTRAL") HJELPEMIDDELSENTRAL("HJELPEMIDDELSENTRAL"),
-        @Json(name = "ALLEREDE_LEVERT") ALLEREDE_LEVERT("ALLEREDE_LEVERT");
-    }
-}
+)
 

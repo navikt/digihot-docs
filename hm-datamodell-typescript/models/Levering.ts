@@ -11,11 +11,12 @@
  */
 
 import { KontaktPerson } from './KontaktPerson';
+import { Leveringsmaate } from './Leveringsmaate';
 import { HttpFile } from '../http/http';
 
 export class Levering {
     'kontaktPerson': KontaktPerson;
-    'leveringsmaate': LeveringLeveringsmaateEnum;
+    'leveringsmaate': Leveringsmaate;
     'adresse'?: string;
     'merknad'?: string;
 
@@ -31,7 +32,7 @@ export class Levering {
         {
             "name": "leveringsmaate",
             "baseName": "leveringsmaate",
-            "type": "LeveringLeveringsmaateEnum",
+            "type": "Leveringsmaate",
             "format": ""
         },
         {
@@ -54,7 +55,4 @@ export class Levering {
     public constructor() {
     }
 }
-
-
-export type LeveringLeveringsmaateEnum = "FOLKEREGISTRERT_ADRESSE" | "ANNEN_ADRESSE" | "HJELPEMIDDELSENTRAL" | "ALLEREDE_LEVERT" ;
 
