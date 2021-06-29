@@ -263,14 +263,6 @@ components:
         merknad:
           type: string
     
-    Leveringsmaate:
-        type: string
-        enum:
-          - FOLKEREGISTRERT_ADRESSE
-          - ANNEN_ADRESSE
-          - HJELPEMIDDELSENTRAL
-          - ALLEREDE_LEVERT
-
     KontaktPerson:
       type: object
       required:
@@ -281,9 +273,20 @@ components:
         telefon:
           type: string
         kontaktpersonType:
-          type: string
-          enum:
-            - HJELPEMIDDELBRUKER
-            - HJELPEMIDDELFORMIDLER
-            - ANNEN_KONTAKTPERSON
-            - INGEN_KONTAKTPERSON
+          $ref: '#/components/schemas/KontaktpersonType'
+
+    KontaktpersonType:
+      type: string
+      enum:
+        - HJELPEMIDDELBRUKER
+        - HJELPEMIDDELFORMIDLER
+        - ANNEN_KONTAKTPERSON
+        - INGEN_KONTAKTPERSON
+    
+    Leveringsmaate:
+      type: string
+      enum:
+        - FOLKEREGISTRERT_ADRESSE
+        - ANNEN_ADRESSE
+        - HJELPEMIDDELSENTRAL
+        - ALLEREDE_LEVERT
