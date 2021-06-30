@@ -17,10 +17,10 @@ java -jar openapi-generator-cli.jar generate \
     --global-property=models
 
 
-rm -r hm-datamodell-typescript/models
+rm -r hm-datamodell-typescript/model*
 
 java -jar openapi-generator-cli.jar generate \
     -i openapi.yaml \
-    -g typescript \
+    -g typescript-node \
     -o hm-datamodell-typescript \
     --additional-properties=enumPropertyNaming=original

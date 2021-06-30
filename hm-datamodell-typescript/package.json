@@ -3,15 +3,20 @@
   "version": "21.180.174051",
   "description": "OpenAPI modeller for DigiHoT hjelpemiddelsøknad",
   "author": "OpenAPI-Generator Contributors",
-  "keywords": [],
   "license": "Unlicense",
-  "main": "./dist/index.js",
-  "typings": "./dist/index.d.ts",
+  "main": "dist/api.js",
+  "types": "dist/api.d.ts",
   "scripts": {
+    "clean": "rm -Rf node_modules/ *.js",
     "build": "tsc",
-    "prepare": "npm run build"
+    "test": "npm run build && node dist/client.js"
+  },
+  "dependencies": {
+    "request": "^2.81.0",
+    "@types/request": "*"
   },
   "devDependencies": {
-    "typescript": "^3.9.3"
+    "typescript": "^2.4.2",
+    "@types/node": "8.10.34"
   }
 }
