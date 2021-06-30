@@ -38,7 +38,7 @@ jobs:
           
           git add hm-datamodell-kotlin/docs
           git add hm-datamodell-kotlin/src
-          git add hm-datamodell-typescript/models
+          git add hm-datamodell-typescript/model
 
           cd hm-datamodell-typescript
           npm --no-git-tag-version version ${{ env.VERSION_TAG }}

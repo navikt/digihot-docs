@@ -24,4 +24,3 @@ java -jar openapi-generator-cli.jar generate \
     -g typescript-node \
     -o hm-datamodell-typescript \
     --additional-properties=enumPropertyNaming=original
-
