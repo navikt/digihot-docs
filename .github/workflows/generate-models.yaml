@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - openapi.yaml
+      - generer-datamodeller.sh
 
 jobs:
   build:
