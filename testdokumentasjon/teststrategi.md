@@ -31,4 +31,35 @@ over viser DigiHOT sin strategi per nå.
             forventet. Ofte spesifiseres det konkrete kriterier som en del av brukerhistorien som leveres, dette gjør vi ikke i DigiHOT per i dag.
         * Utforskende testing - Teammedlemmer utfører testing uten å skulle sjekke ut en gitt funksjonalitet, men forsøker å avdekke
         feil hvor som helst i løsningen. Vi har ingen struktur rundt slik testing per i dag. 
+          
+### Testing av brukerhistorier før prodsetting
+Enhetstester, integrasjonstester og manuell testing av utvikler gjennomføres alltid uansett størrelse på ny/endret funksjonalitet. 
+
+Ved utvikling av ny funksjonalitet av en viss kompleksitet eller der konsekvensen for sluttbruker er større, typisk en ny brukerhistorie, 
+skal dette testes av andre enn utvikler selv før produksjonssetting. Som regel består dette av manuell ende-til-ende testing av produkteier og/eller designer. 
+
+Utvikler kommuniserer vanligvis at ny funksjonalitet er klar til test på stand-up eller i slack-kanalen "#digihot_test". 
+
+Dersom det finnes feil eller behov for endringer så løses dette fortløpende. Dersom feil eller andre nødvendige endringer er omfattende 
+tas funksjonaliteten ut av trunk (dvs. kode som skal til produksjon) frem til den er klar for ny test. Dersom nødvendige endringer er mindre, 
+f.eks. mindre kosmetiske feil, kan koden produksjonssettes og endringer gjøres i etterkant. 
+
       
+### Monitorering og feedback
+
+Det er satt opp alerting mot slack ved feilhendelser i back-end applikasjoner.
+* '#digihot-alerts'
+* '#digihot-rr-alerts'
+    
+Det er satt opp noe overvåking av feilhendelser i front-end applikasjoner gjennom logger i sentry.
+
+**N.B. Denne loggingen kan med fordel bygges ut og forbedres**
+* https://sentry.gc.nav.no/
+    
+Daglig drift overvåkes gjennom dashboards i grafana: 
+* https://grafana.nais.io/d/cAuIA5iMk/hjelpemidlersoknad?orgId=1&refresh=1m (Overordnet board)
+* https://grafana.nais.io/d/MiarU7PGk/digihot-rapids-and-rivers?orgId=1 (Rivers & Rapids)
+* https://grafana.nais.io/d/4pzzHK6Gz/saksbehandling?orgId=1 (Saksbehandling)
+    
+
+
