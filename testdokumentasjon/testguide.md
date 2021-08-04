@@ -71,3 +71,5 @@ En behovsmelding må fylle disse kriteriene for å gå til ny saksbehandlingsfly
 - Bruker må bo i samme kommune som formidler representerer
 
 Alle søknader i test går til sentral 2970 - NAV IKT DRIFT
+
+Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://grafana.nais.io/d/4pzzHK6Gz/saksbehandling?orgId=1&var-cluster=team-digihot-influxdb-dev)
