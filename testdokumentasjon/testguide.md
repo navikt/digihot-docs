@@ -29,6 +29,7 @@ Det finnes per nå tre grupper med testbrukere
 ### Behovsmelding 
 
 [Gå til behovsmelding](https://hjelpemidler.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
+
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https://dolly.nais-dev-fss.adeo.no/).
