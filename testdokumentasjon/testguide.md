@@ -1,0 +1,52 @@
+## Test guide DigiHOT
+
+Det finnes per nå tre grupper med testbrukere
+
+- #### Hjelpemiddelformidlere
+
+  | FNR         | NAVN            | KOMMUNE | ENGANGSKODE | PASSORD  |
+  |-------------|-----------------|---------|-------------|----------|
+  | 15084300133 | SEDAT KRONJUVEL | SULDAL  | otp         | qwer1234 |
+
+- #### Hjelpemiddelbrukere
+
+  | FNR         | NAVN            | KOMMUNE | ENGANGSKODE | PASSORD  |
+  |-------------|-----------------|---------|-------------|----------|
+  | 15084300133 | SEDAT KRONJUVEL | SULDAL  | otp         | qwer1234 |
+  | 16120101181 | KREATIV BAMSE   | SULDAL  | otp         | qwer1234 |
+  | 10127622634 | KRAFTIG ERT     | SULDAL  | otp         | qwer1234 |
+
+- #### Saksbehandlere
+
+  | E-POST      | NAVN            | SENTRAL | PASSORD  |
+  |-------------|-----------------|---------|-------------|
+  | f_z994064.e_z994064@trygdeetaten.no | f_z994064.e_z99406 | 2970 - NAV IKT DRIFT  | SortBil3 |
+  | f_z994074.e_z994074@trygdeetaten.no | f_z994074.e_z99407 | 2970 - NAV IKT DRIFT  | SortBil3 |
+
+
+### Behovsmelding 
+
+[Gå til behovsmelding](https://hjelpemidler.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
+Logg inn med en [formidler](#hjelpemiddelformidlere)
+
+### Dine hjelpemidler 
+
+[Gå til Dine hjelpemidler](https://hjelpemidler.dev.nav.no/hjelpemidler/dinehjelpemidler/)
+
+Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
+
+### Dine hjelpemiddelsøknader (for formidlere)
+
+[Gå til Dine hjelpemiddelsøknader](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
+
+Logg inn med en [formidler](#hjelpemiddelformidlere)
+
+### Ny Saksbehandlingsflate 
+
+[Gå til ny saksbehandlingsflate](https://hm-saksbehandling.dev.intern.nav.no/)
+
+Logg inn med en [saksbehandler](#saksbehandlere)
+
+
+
+    
