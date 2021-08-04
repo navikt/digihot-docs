@@ -24,10 +24,19 @@ Det finnes per nå tre grupper med testbrukere
   | f_z994074.e_z994074@trygdeetaten.no | f_z994074.e_z99407 | 2970 - NAV IKT DRIFT  | SortBil3 |
 
 
+***
+
 ### Behovsmelding 
 
 [Gå til behovsmelding](https://hjelpemidler.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
 Logg inn med en [formidler](#hjelpemiddelformidlere)
+
+Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https://dolly.nais-dev-fss.adeo.no/).
+Merk at for å se "Dine Hjelpemidler" må brukeren det søkes for være tilknyttet idporten, og om dette er
+ønskelig må man søke på vegne av en av disse [hjelpemiddelbrukerne](#hjelpemiddelbrukere)
+
+***
+
 
 ### Dine hjelpemidler 
 
@@ -35,11 +44,14 @@ Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
+***
+
 ### Dine hjelpemiddelsøknader (for formidlere)
 
 [Gå til Dine hjelpemiddelsøknader](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
+***
 
 ### Ny Saksbehandlingsflate 
 
@@ -47,6 +59,15 @@ Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 Logg inn med en [saksbehandler](#saksbehandlere)
 
+***
+
+###  Hvordan opprette en behovsmelding som dukker opp i ny saksbehandlingsløsning?
 
 
-    
+En behovsmelding må fylle disse kriteriene for å gå til ny saksbehandlingsflyt i test: 
+ 
+- Ingen fritekst
+- Bruker må bo hjemme
+- Bruker må bo i samme kommune som formidler representerer
+
+Alle søknader i test går til sentral 2970 - NAV IKT DRIFT
