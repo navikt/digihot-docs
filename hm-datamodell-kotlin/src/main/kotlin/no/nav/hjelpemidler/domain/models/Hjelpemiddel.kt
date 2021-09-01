@@ -14,6 +14,7 @@ package no.nav.hjelpemidler.domain.models
 import no.nav.hjelpemidler.domain.models.HjelpemiddelVilkar
 import no.nav.hjelpemidler.domain.models.RullestolInfo
 import no.nav.hjelpemidler.domain.models.Tilbehor
+import no.nav.hjelpemidler.domain.models.UtlevertInfo
 
 import com.squareup.moshi.Json
 
@@ -26,6 +27,7 @@ import com.squareup.moshi.Json
  * @param tilleggsinformasjon 
  * @param utlevertFraHjelpemiddelsentralen 
  * @param rangering 
+ * @param utlevertInfo 
  * @param vilkarliste 
  * @param tilbehorListe 
  * @param begrunnelse 
@@ -49,6 +51,8 @@ data class Hjelpemiddel (
     val utlevertFraHjelpemiddelsentralen: kotlin.Boolean,
     @Json(name = "rangering")
     val rangering: kotlin.String? = null,
+    @Json(name = "utlevertInfo")
+    val utlevertInfo: UtlevertInfo? = null,
     @Json(name = "vilkarliste")
     val vilkarliste: kotlin.collections.List<HjelpemiddelVilkar>? = null,
     @Json(name = "tilbehorListe")

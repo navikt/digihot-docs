@@ -14,6 +14,7 @@ import { RequestFile } from './models';
 import { HjelpemiddelVilkar } from './hjelpemiddelVilkar';
 import { RullestolInfo } from './rullestolInfo';
 import { Tilbehor } from './tilbehor';
+import { UtlevertInfo } from './utlevertInfo';
 
 export class Hjelpemiddel {
     'antall': number;
@@ -23,6 +24,7 @@ export class Hjelpemiddel {
     'tilleggsinformasjon': string;
     'rangering'?: string;
     'utlevertFraHjelpemiddelsentralen': boolean;
+    'utlevertInfo'?: UtlevertInfo;
     'vilkarliste'?: Array<HjelpemiddelVilkar>;
     'tilbehorListe'?: Array<Tilbehor>;
     'begrunnelse'?: string;
@@ -67,6 +69,11 @@ export class Hjelpemiddel {
             "name": "utlevertFraHjelpemiddelsentralen",
             "baseName": "utlevertFraHjelpemiddelsentralen",
             "type": "boolean"
+        },
+        {
+            "name": "utlevertInfo",
+            "baseName": "utlevertInfo",
+            "type": "UtlevertInfo"
         },
         {
             "name": "vilkarliste",
