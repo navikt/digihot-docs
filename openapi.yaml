@@ -191,7 +191,7 @@ components:
       properties:
         utlevertType:
           $ref: '#/components/schemas/UtlevertType'
-        overførtFraBruker: 
+        overfoertFraBruker: 
           type: string
         annenKommentar:
           type: string
