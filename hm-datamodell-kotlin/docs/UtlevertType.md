@@ -6,9 +6,9 @@
 
     * `FREMSKUTT_LAGER` (value: `"FremskuttLager"`)
 
-    * `KORTTIDSL_N` (value: `"Korttidslån"`)
+    * `KORTTIDSLAAN` (value: `"Korttidslaan"`)
 
-    * `OVERF_RT` (value: `"Overført"`)
+    * `OVERFOERT` (value: `"Overfoert"`)
 
     * `ANNET` (value: `"Annet"`)
 

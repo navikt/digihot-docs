@@ -16,7 +16,7 @@ import com.squareup.moshi.Json
 
 /**
 * 
-* Values: FREMSKUTT_LAGER,KORTTIDSL_N,OVERF_RT,ANNET
+* Values: FREMSKUTT_LAGER,KORTTIDSLAAN,OVERFOERT,ANNET
 */
 
 enum class UtlevertType(val value: kotlin.String) {
@@ -25,11 +25,11 @@ enum class UtlevertType(val value: kotlin.String) {
     @Json(name = "FremskuttLager")
     FREMSKUTT_LAGER("FremskuttLager"),
 
-    @Json(name = "Korttidslån")
-    KORTTIDSL_N("Korttidslån"),
+    @Json(name = "Korttidslaan")
+    KORTTIDSLAAN("Korttidslaan"),
 
-    @Json(name = "Overført")
-    OVERF_RT("Overført"),
+    @Json(name = "Overfoert")
+    OVERFOERT("Overfoert"),
 
     @Json(name = "Annet")
     ANNET("Annet");

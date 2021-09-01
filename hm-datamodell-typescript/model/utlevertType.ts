@@ -14,7 +14,7 @@ import { RequestFile } from './models';
 
 export enum UtlevertType {
     FremskuttLager = <any> 'FremskuttLager',
-    Korttidsln = <any> 'Korttidslån',
-    Overfrt = <any> 'Overført',
+    Korttidslaan = <any> 'Korttidslaan',
+    Overfoert = <any> 'Overfoert',
     Annet = <any> 'Annet'
 }
