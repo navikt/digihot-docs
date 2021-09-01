@@ -17,6 +17,8 @@ export * from './signaturType';
 export * from './sitteputeValg';
 export * from './soknadsdata';
 export * from './tilbehor';
+export * from './utlevertInfo';
+export * from './utlevertType';
 
 import * as fs from 'fs';
 
@@ -48,6 +50,8 @@ import { SignaturType } from './signaturType';
 import { SitteputeValg } from './sitteputeValg';
 import { Soknadsdata } from './soknadsdata';
 import { Tilbehor } from './tilbehor';
+import { UtlevertInfo } from './utlevertInfo';
+import { UtlevertType } from './utlevertType';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -68,6 +72,7 @@ let enumsMap: {[index: string]: any} = {
         "Leveringsmaate": Leveringsmaate,
         "SignaturType": SignaturType,
         "SitteputeValg": SitteputeValg,
+        "UtlevertType": UtlevertType,
 }
 
 let typeMap: {[index: string]: any} = {
@@ -82,6 +87,7 @@ let typeMap: {[index: string]: any} = {
     "RullestolInfo": RullestolInfo,
     "Soknadsdata": Soknadsdata,
     "Tilbehor": Tilbehor,
+    "UtlevertInfo": UtlevertInfo,
 }
 
 export class ObjectSerializer {

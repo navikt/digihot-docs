@@ -11,6 +11,7 @@ Name | Type | Description | Notes
 **tilleggsinformasjon** | **kotlin.String** |  | 
 **utlevertFraHjelpemiddelsentralen** | **kotlin.Boolean** |  | 
 **rangering** | **kotlin.String** |  |  [optional]
+**utlevertInfo** | [**UtlevertInfo**](UtlevertInfo.md) |  |  [optional]
 **vilkarliste** | [**kotlin.collections.List&lt;HjelpemiddelVilkar&gt;**](HjelpemiddelVilkar.md) |  |  [optional]
 **tilbehorListe** | [**kotlin.collections.List&lt;Tilbehor&gt;**](Tilbehor.md) |  |  [optional]
 **begrunnelse** | **kotlin.String** |  |  [optional]
