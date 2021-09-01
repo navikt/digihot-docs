@@ -200,8 +200,8 @@ components:
       type: string
       enum:
         - FremskuttLager
-        - Korttidslån
-        - Overført
+        - Korttidslaan
+        - Overfoert
         - Annet
 
     HjelpemiddelVilkar:
