@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **utlevertType** | [**UtlevertType**](UtlevertType.md) |  |  [optional]
-**overfRtFraBruker** | **kotlin.String** |  |  [optional]
+**overfoertFraBruker** | **kotlin.String** |  |  [optional]
 **annenKommentar** | **kotlin.String** |  |  [optional]
 
 

@@ -18,15 +18,15 @@ import com.squareup.moshi.Json
 /**
  * 
  * @param utlevertType 
- * @param overfRtFraBruker 
+ * @param overfoertFraBruker 
  * @param annenKommentar 
  */
 
 data class UtlevertInfo (
     @Json(name = "utlevertType")
     val utlevertType: UtlevertType? = null,
-    @Json(name = "overførtFraBruker")
-    val overfRtFraBruker: kotlin.String? = null,
+    @Json(name = "overfoertFraBruker")
+    val overfoertFraBruker: kotlin.String? = null,
     @Json(name = "annenKommentar")
     val annenKommentar: kotlin.String? = null
 )

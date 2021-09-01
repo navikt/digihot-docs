@@ -15,7 +15,7 @@ import { UtlevertType } from './utlevertType';
 
 export class UtlevertInfo {
     'utlevertType'?: UtlevertType;
-    'overfrtFraBruker'?: string;
+    'overfoertFraBruker'?: string;
     'annenKommentar'?: string;
 
     static discriminator: string | undefined = undefined;
@@ -27,8 +27,8 @@ export class UtlevertInfo {
             "type": "UtlevertType"
         },
         {
-            "name": "overfrtFraBruker",
-            "baseName": "overførtFraBruker",
+            "name": "overfoertFraBruker",
+            "baseName": "overfoertFraBruker",
             "type": "string"
         },
         {
