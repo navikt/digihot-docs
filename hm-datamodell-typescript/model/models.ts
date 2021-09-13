@@ -12,11 +12,10 @@ export * from './kroppsmaal';
 export * from './levering';
 export * from './leveringsmaate';
 export * from './oppfolgingsansvarlig';
-export * from './rullestolInfo';
 export * from './signaturType';
-export * from './sitteputeValg';
 export * from './soknadsdata';
 export * from './tilbehor';
+export * from './tilleggsinfo';
 export * from './utlevertInfo';
 export * from './utlevertType';
 
@@ -45,11 +44,10 @@ import { Kroppsmaal } from './kroppsmaal';
 import { Levering } from './levering';
 import { Leveringsmaate } from './leveringsmaate';
 import { Oppfolgingsansvarlig } from './oppfolgingsansvarlig';
-import { RullestolInfo } from './rullestolInfo';
 import { SignaturType } from './signaturType';
-import { SitteputeValg } from './sitteputeValg';
 import { Soknadsdata } from './soknadsdata';
 import { Tilbehor } from './tilbehor';
+import { Tilleggsinfo } from './tilleggsinfo';
 import { UtlevertInfo } from './utlevertInfo';
 import { UtlevertType } from './utlevertType';
 
@@ -71,7 +69,7 @@ let enumsMap: {[index: string]: any} = {
         "KontaktpersonType": KontaktpersonType,
         "Leveringsmaate": Leveringsmaate,
         "SignaturType": SignaturType,
-        "SitteputeValg": SitteputeValg,
+        "Tilleggsinfo.KeyEnum": Tilleggsinfo.KeyEnum,
         "UtlevertType": UtlevertType,
 }
 
@@ -84,9 +82,9 @@ let typeMap: {[index: string]: any} = {
     "Kroppsmaal": Kroppsmaal,
     "Levering": Levering,
     "Oppfolgingsansvarlig": Oppfolgingsansvarlig,
-    "RullestolInfo": RullestolInfo,
     "Soknadsdata": Soknadsdata,
     "Tilbehor": Tilbehor,
+    "Tilleggsinfo": Tilleggsinfo,
     "UtlevertInfo": UtlevertInfo,
 }
 

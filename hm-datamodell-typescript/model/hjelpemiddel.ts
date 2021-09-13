@@ -12,29 +12,37 @@
 
 import { RequestFile } from './models';
 import { HjelpemiddelVilkar } from './hjelpemiddelVilkar';
-import { RullestolInfo } from './rullestolInfo';
 import { Tilbehor } from './tilbehor';
+import { Tilleggsinfo } from './tilleggsinfo';
 import { UtlevertInfo } from './utlevertInfo';
 
 export class Hjelpemiddel {
+    'navn'?: string;
     'antall': number;
     'beskrivelse': string;
     'hjelpemiddelkategori': string;
     'hmsNr': string;
-    'tilleggsinformasjon': string;
     'rangering'?: string;
+    'andreKommentarer': string;
     'utlevertFraHjelpemiddelsentralen': boolean;
     'utlevertInfo'?: UtlevertInfo;
     'vilkarliste'?: Array<HjelpemiddelVilkar>;
     'tilbehorListe'?: Array<Tilbehor>;
+    'kanIkkeHaTilsvarande': boolean;
+    /**
+    * Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
+    */
     'begrunnelse'?: string;
-    'kanIkkeTilsvarande'?: boolean;
-    'navn'?: string;
-    'rullestolInfo'?: RullestolInfo;
+    'tilleggsinfo'?: Array<Tilleggsinfo>;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
+        {
+            "name": "navn",
+            "baseName": "navn",
+            "type": "string"
+        },
         {
             "name": "antall",
             "baseName": "antall",
@@ -56,13 +64,13 @@ export class Hjelpemiddel {
             "type": "string"
         },
         {
-            "name": "tilleggsinformasjon",
-            "baseName": "tilleggsinformasjon",
+            "name": "rangering",
+            "baseName": "rangering",
             "type": "string"
         },
         {
-            "name": "rangering",
-            "baseName": "rangering",
+            "name": "andreKommentarer",
+            "baseName": "andreKommentarer",
             "type": "string"
         },
         {
@@ -86,24 +94,19 @@ export class Hjelpemiddel {
             "type": "Array<Tilbehor>"
         },
         {
+            "name": "kanIkkeHaTilsvarande",
+            "baseName": "kanIkkeHaTilsvarande",
+            "type": "boolean"
+        },
+        {
             "name": "begrunnelse",
             "baseName": "begrunnelse",
             "type": "string"
         },
         {
-            "name": "kanIkkeTilsvarande",
-            "baseName": "kanIkkeTilsvarande",
-            "type": "boolean"
-        },
-        {
-            "name": "navn",
-            "baseName": "navn",
-            "type": "string"
-        },
-        {
-            "name": "rullestolInfo",
-            "baseName": "rullestolInfo",
-            "type": "RullestolInfo"
+            "name": "tilleggsinfo",
+            "baseName": "tilleggsinfo",
+            "type": "Array<Tilleggsinfo>"
         }    ];
 
     static getAttributeTypeMap() {

@@ -12,8 +12,8 @@
 package no.nav.hjelpemidler.domain.models
 
 import no.nav.hjelpemidler.domain.models.HjelpemiddelVilkar
-import no.nav.hjelpemidler.domain.models.RullestolInfo
 import no.nav.hjelpemidler.domain.models.Tilbehor
+import no.nav.hjelpemidler.domain.models.Tilleggsinfo
 import no.nav.hjelpemidler.domain.models.UtlevertInfo
 
 import com.squareup.moshi.Json
@@ -24,16 +24,16 @@ import com.squareup.moshi.Json
  * @param beskrivelse 
  * @param hjelpemiddelkategori 
  * @param hmsNr 
- * @param tilleggsinformasjon 
+ * @param andreKommentarer 
  * @param utlevertFraHjelpemiddelsentralen 
+ * @param kanIkkeHaTilsvarande 
+ * @param navn 
  * @param rangering 
  * @param utlevertInfo 
  * @param vilkarliste 
  * @param tilbehorListe 
- * @param begrunnelse 
- * @param kanIkkeTilsvarande 
- * @param navn 
- * @param rullestolInfo 
+ * @param begrunnelse Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
+ * @param tilleggsinfo 
  */
 
 data class Hjelpemiddel (
@@ -45,10 +45,14 @@ data class Hjelpemiddel (
     val hjelpemiddelkategori: kotlin.String,
     @Json(name = "hmsNr")
     val hmsNr: kotlin.String,
-    @Json(name = "tilleggsinformasjon")
-    val tilleggsinformasjon: kotlin.String,
+    @Json(name = "andreKommentarer")
+    val andreKommentarer: kotlin.String,
     @Json(name = "utlevertFraHjelpemiddelsentralen")
     val utlevertFraHjelpemiddelsentralen: kotlin.Boolean,
+    @Json(name = "kanIkkeHaTilsvarande")
+    val kanIkkeHaTilsvarande: kotlin.Boolean,
+    @Json(name = "navn")
+    val navn: kotlin.String? = null,
     @Json(name = "rangering")
     val rangering: kotlin.String? = null,
     @Json(name = "utlevertInfo")
@@ -57,13 +61,10 @@ data class Hjelpemiddel (
     val vilkarliste: kotlin.collections.List<HjelpemiddelVilkar>? = null,
     @Json(name = "tilbehorListe")
     val tilbehorListe: kotlin.collections.List<Tilbehor>? = null,
+    /* Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering. */
     @Json(name = "begrunnelse")
     val begrunnelse: kotlin.String? = null,
-    @Json(name = "kanIkkeTilsvarande")
-    val kanIkkeTilsvarande: kotlin.Boolean? = null,
-    @Json(name = "navn")
-    val navn: kotlin.String? = null,
-    @Json(name = "rullestolInfo")
-    val rullestolInfo: RullestolInfo? = null
+    @Json(name = "tilleggsinfo")
+    val tilleggsinfo: kotlin.collections.List<Tilleggsinfo>? = null
 )
 

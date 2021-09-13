@@ -4,13 +4,13 @@
 ## Enum
 
 
-    * `FREMSKUTT_LAGER` (value: `"FremskuttLager"`)
+    * `FREMSKUTT_LAGER` (value: `"FREMSKUTT_LAGER"`)
 
-    * `KORTTIDSLAAN` (value: `"Korttidslaan"`)
+    * `KORTTIDSLAAN` (value: `"KORTTIDSLAAN"`)
 
-    * `OVERFOERT` (value: `"Overfoert"`)
+    * `OVERFOERT` (value: `"OVERFOERT"`)
 
-    * `ANNET` (value: `"Annet"`)
+    * `ANNET` (value: `"ANNET"`)
 
 
 

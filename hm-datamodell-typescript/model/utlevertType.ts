@@ -13,8 +13,8 @@
 import { RequestFile } from './models';
 
 export enum UtlevertType {
-    FremskuttLager = <any> 'FremskuttLager',
-    Korttidslaan = <any> 'Korttidslaan',
-    Overfoert = <any> 'Overfoert',
-    Annet = <any> 'Annet'
+    FREMSKUTT_LAGER = <any> 'FREMSKUTT_LAGER',
+    KORTTIDSLAAN = <any> 'KORTTIDSLAAN',
+    OVERFOERT = <any> 'OVERFOERT',
+    ANNET = <any> 'ANNET'
 }

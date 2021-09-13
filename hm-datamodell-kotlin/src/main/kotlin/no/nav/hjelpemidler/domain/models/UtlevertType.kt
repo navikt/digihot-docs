@@ -22,17 +22,17 @@ import com.squareup.moshi.Json
 enum class UtlevertType(val value: kotlin.String) {
 
 
-    @Json(name = "FremskuttLager")
-    FREMSKUTT_LAGER("FremskuttLager"),
+    @Json(name = "FREMSKUTT_LAGER")
+    FREMSKUTT_LAGER("FREMSKUTT_LAGER"),
 
-    @Json(name = "Korttidslaan")
-    KORTTIDSLAAN("Korttidslaan"),
+    @Json(name = "KORTTIDSLAAN")
+    KORTTIDSLAAN("KORTTIDSLAAN"),
 
-    @Json(name = "Overfoert")
-    OVERFOERT("Overfoert"),
+    @Json(name = "OVERFOERT")
+    OVERFOERT("OVERFOERT"),
 
-    @Json(name = "Annet")
-    ANNET("Annet");
+    @Json(name = "ANNET")
+    ANNET("ANNET");
 
 
     /**
