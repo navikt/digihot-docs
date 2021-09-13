@@ -149,10 +149,12 @@ components:
         - beskrivelse
         - hjelpemiddelkategori
         - hmsNr
-        - tilleggsinformasjon
+        - andreKommentarer
         - utlevertFraHjelpemiddelsentralen
-        - kanIkkeTilsvarende
+        - kanIkkeHaTilsvarande
       properties:
+        navn:
+          type: string
         antall:
           type: integer
         beskrivelse:
@@ -161,14 +163,14 @@ components:
           type: string
         hmsNr:
           type: string
-        tilleggsinformasjon:
-          type: string
         rangering:
+          type: string
+        andreKommentarer:
           type: string
         utlevertFraHjelpemiddelsentralen:
           type: boolean
         utlevertInfo:
-          $ref: "#/components/schemas/UtlevertInfo"
+          $ref: '#/components/schemas/UtlevertInfo'
         vilkarliste:
           type: array
           items:
@@ -177,14 +179,15 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Tilbehor'
+        kanIkkeHaTilsvarande:
+          type: boolean
         begrunnelse:
           type: string
-        kanIkkeTilsvarande:
-          type: boolean
-        navn:
-          type: string
-        rullestolInfo: 
-          $ref: '#/components/schemas/RullestolInfo'
+          description: Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
+        tilleggsinfo:
+          type: array
+          items:
+            $ref: '#/components/schemas/Tilleggsinfo'
     
     UtlevertInfo:
       type: object
@@ -199,10 +202,10 @@ components:
     UtlevertType:
       type: string
       enum:
-        - FremskuttLager
-        - Korttidslaan
-        - Overfoert
-        - Annet
+        - FREMSKUTT_LAGER
+        - KORTTIDSLAAN
+        - OVERFOERT
+        - ANNET
 
     HjelpemiddelVilkar:
       type: object
@@ -227,20 +230,19 @@ components:
         navn:
           type: string
 
-    RullestolInfo:
+    Tilleggsinfo:
       type: object
+      required:
+        - key
       properties:
-        skalBrukesIBil:
-          type: boolean
-        sitteputeValg:
-          $ref: '#/components/schemas/SitteputeValg'
-    
-    SitteputeValg:
-      type: string
-      enum:
-        - StandardSittepute
-        - LeggesTilSeparat
-        - HarFraFor
+        key: 
+          type: string
+          enum:
+            - RULLESTOL_SKAL_BRUKES_I_BIL
+            - SITTEPUTEVALG_STANDARD_SITTEPUTE
+            - SITTEPUTEVALG_LEGGES_TIL_SEPARAT
+            - SITTEPUTEVALG_HAR_FRA_FOR
+            - SITTEPUTEVALG_TRENGER_SITTEPUTE
 
     Oppfolgingsansvarlig:
       type: object
