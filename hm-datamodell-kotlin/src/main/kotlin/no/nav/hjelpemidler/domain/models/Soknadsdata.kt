@@ -25,8 +25,8 @@ import com.squareup.moshi.Json
  * @param formidler 
  * @param hjelpemidler 
  * @param hjelpemiddelTotalAntall 
- * @param oppfolgingsansvarlig 
  * @param levering 
+ * @param oppfolgingsansvarlig 
  */
 
 data class Soknadsdata (
@@ -38,9 +38,9 @@ data class Soknadsdata (
     val hjelpemidler: kotlin.collections.List<Hjelpemiddel>,
     @Json(name = "hjelpemiddelTotalAntall")
     val hjelpemiddelTotalAntall: kotlin.Int,
-    @Json(name = "oppfolgingsansvarlig")
-    val oppfolgingsansvarlig: Oppfolgingsansvarlig,
     @Json(name = "levering")
-    val levering: Levering
+    val levering: Levering,
+    @Json(name = "oppfolgingsansvarlig")
+    val oppfolgingsansvarlig: Oppfolgingsansvarlig? = null
 )
 

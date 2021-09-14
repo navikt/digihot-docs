@@ -22,7 +22,7 @@ export class Soknadsdata {
     'formidler': Formidler;
     'hjelpemidler': Array<Hjelpemiddel>;
     'hjelpemiddelTotalAntall': number;
-    'oppfolgingsansvarlig': Oppfolgingsansvarlig;
+    'oppfolgingsansvarlig'?: Oppfolgingsansvarlig;
     'levering': Levering;
 
     static discriminator: string | undefined = undefined;

@@ -8,8 +8,8 @@ Name | Type | Description | Notes
 **formidler** | [**Formidler**](Formidler.md) |  | 
 **hjelpemidler** | [**kotlin.collections.List&lt;Hjelpemiddel&gt;**](Hjelpemiddel.md) |  | 
 **hjelpemiddelTotalAntall** | **kotlin.Int** |  | 
-**oppfolgingsansvarlig** | [**Oppfolgingsansvarlig**](Oppfolgingsansvarlig.md) |  | 
 **levering** | [**Levering**](Levering.md) |  | 
+**oppfolgingsansvarlig** | [**Oppfolgingsansvarlig**](Oppfolgingsansvarlig.md) |  |  [optional]
 
 
 
