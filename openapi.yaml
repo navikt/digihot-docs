@@ -20,7 +20,6 @@ components:
         - formidler
         - hjelpemidler
         - hjelpemiddelTotalAntall
-        - oppfolgingsansvarlig
         - levering
       properties:
         bruker:
