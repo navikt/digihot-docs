@@ -178,11 +178,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/Tilbehor'
-        kanIkkeHaTilsvarande:
-          type: boolean
-        begrunnelse:
-          type: string
-          description: Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
         tilleggsinfo:
           type: array
           items:
