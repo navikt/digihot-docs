@@ -242,6 +242,12 @@ components:
             - SITTEPUTEVALG_LEGGES_TIL_SEPARAT
             - SITTEPUTEVALG_HAR_FRA_FOR
             - SITTEPUTEVALG_TRENGER_SITTEPUTE
+            - LAVERE_RANGERING_BEGRUNNELSE
+            - KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE
+        values:
+          type: string
+          description: 'JSON med eventuelle verdier f.eks. begrunnelse for KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE.'
+          example: '{"begrunnelse": "Bruker ønsker samme type som hen har hatt tidligere."}'
 
     Oppfolgingsansvarlig:
       type: object
