@@ -23,7 +23,6 @@ export class Hjelpemiddel {
     'hjelpemiddelkategori': string;
     'hmsNr': string;
     'rangering'?: string;
-    'andreKommentarer': string;
     'utlevertFraHjelpemiddelsentralen': boolean;
     'utlevertInfo'?: UtlevertInfo;
     'vilkarliste'?: Array<HjelpemiddelVilkar>;
@@ -61,11 +60,6 @@ export class Hjelpemiddel {
         {
             "name": "rangering",
             "baseName": "rangering",
-            "type": "string"
-        },
-        {
-            "name": "andreKommentarer",
-            "baseName": "andreKommentarer",
             "type": "string"
         },
         {

@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **beskrivelse** | **kotlin.String** |  | 
 **hjelpemiddelkategori** | **kotlin.String** |  | 
 **hmsNr** | **kotlin.String** |  | 
-**andreKommentarer** | **kotlin.String** |  | 
 **utlevertFraHjelpemiddelsentralen** | **kotlin.Boolean** |  | 
 **navn** | **kotlin.String** |  |  [optional]
 **rangering** | **kotlin.String** |  |  [optional]

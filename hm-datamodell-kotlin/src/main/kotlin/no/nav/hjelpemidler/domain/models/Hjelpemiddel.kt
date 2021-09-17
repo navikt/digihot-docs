@@ -24,7 +24,6 @@ import com.squareup.moshi.Json
  * @param beskrivelse 
  * @param hjelpemiddelkategori 
  * @param hmsNr 
- * @param andreKommentarer 
  * @param utlevertFraHjelpemiddelsentralen 
  * @param navn 
  * @param rangering 
@@ -43,8 +42,6 @@ data class Hjelpemiddel (
     val hjelpemiddelkategori: kotlin.String,
     @Json(name = "hmsNr")
     val hmsNr: kotlin.String,
-    @Json(name = "andreKommentarer")
-    val andreKommentarer: kotlin.String,
     @Json(name = "utlevertFraHjelpemiddelsentralen")
     val utlevertFraHjelpemiddelsentralen: kotlin.Boolean,
     @Json(name = "navn")
