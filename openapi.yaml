@@ -148,9 +148,7 @@ components:
         - beskrivelse
         - hjelpemiddelkategori
         - hmsNr
-        - andreKommentarer
         - utlevertFraHjelpemiddelsentralen
-        - kanIkkeHaTilsvarande
       properties:
         navn:
           type: string
@@ -163,8 +161,6 @@ components:
         hmsNr:
           type: string
         rangering:
-          type: string
-        andreKommentarer:
           type: string
         utlevertFraHjelpemiddelsentralen:
           type: boolean
@@ -239,6 +235,7 @@ components:
             - SITTEPUTEVALG_TRENGER_SITTEPUTE
             - LAVERE_RANGERING_BEGRUNNELSE
             - KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE
+            - ANNEN_KOMMENTAR
         values:
           type: string
           description: 'JSON med eventuelle verdier f.eks. begrunnelse for KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE.'
