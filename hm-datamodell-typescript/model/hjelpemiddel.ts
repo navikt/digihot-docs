@@ -28,11 +28,6 @@ export class Hjelpemiddel {
     'utlevertInfo'?: UtlevertInfo;
     'vilkarliste'?: Array<HjelpemiddelVilkar>;
     'tilbehorListe'?: Array<Tilbehor>;
-    'kanIkkeHaTilsvarande': boolean;
-    /**
-    * Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
-    */
-    'begrunnelse'?: string;
     'tilleggsinfo'?: Array<Tilleggsinfo>;
 
     static discriminator: string | undefined = undefined;
@@ -92,16 +87,6 @@ export class Hjelpemiddel {
             "name": "tilbehorListe",
             "baseName": "tilbehorListe",
             "type": "Array<Tilbehor>"
-        },
-        {
-            "name": "kanIkkeHaTilsvarande",
-            "baseName": "kanIkkeHaTilsvarande",
-            "type": "boolean"
-        },
-        {
-            "name": "begrunnelse",
-            "baseName": "begrunnelse",
-            "type": "string"
         },
         {
             "name": "tilleggsinfo",

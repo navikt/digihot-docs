@@ -26,13 +26,11 @@ import com.squareup.moshi.Json
  * @param hmsNr 
  * @param andreKommentarer 
  * @param utlevertFraHjelpemiddelsentralen 
- * @param kanIkkeHaTilsvarande 
  * @param navn 
  * @param rangering 
  * @param utlevertInfo 
  * @param vilkarliste 
  * @param tilbehorListe 
- * @param begrunnelse Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering.
  * @param tilleggsinfo 
  */
 
@@ -49,8 +47,6 @@ data class Hjelpemiddel (
     val andreKommentarer: kotlin.String,
     @Json(name = "utlevertFraHjelpemiddelsentralen")
     val utlevertFraHjelpemiddelsentralen: kotlin.Boolean,
-    @Json(name = "kanIkkeHaTilsvarande")
-    val kanIkkeHaTilsvarande: kotlin.Boolean,
     @Json(name = "navn")
     val navn: kotlin.String? = null,
     @Json(name = "rangering")
@@ -61,9 +57,6 @@ data class Hjelpemiddel (
     val vilkarliste: kotlin.collections.List<HjelpemiddelVilkar>? = null,
     @Json(name = "tilbehorListe")
     val tilbehorListe: kotlin.collections.List<Tilbehor>? = null,
-    /* Begrunnelse for hvorfor bruker ikke kan ha tilsvarende hjelpemiddel eller hjelpemiddel med høyere rangering. */
-    @Json(name = "begrunnelse")
-    val begrunnelse: kotlin.String? = null,
     @Json(name = "tilleggsinfo")
     val tilleggsinfo: kotlin.collections.List<Tilleggsinfo>? = null
 )
