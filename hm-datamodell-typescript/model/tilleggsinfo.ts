@@ -14,6 +14,10 @@ import { RequestFile } from './models';
 
 export class Tilleggsinfo {
     'key': Tilleggsinfo.KeyEnum;
+    /**
+    * JSON med eventuelle verdier f.eks. begrunnelse for KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE.
+    */
+    'values'?: string;
 
     static discriminator: string | undefined = undefined;
 
@@ -22,6 +26,11 @@ export class Tilleggsinfo {
             "name": "key",
             "baseName": "key",
             "type": "Tilleggsinfo.KeyEnum"
+        },
+        {
+            "name": "values",
+            "baseName": "values",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
@@ -35,6 +44,8 @@ export namespace Tilleggsinfo {
         SITTEPUTEVALG_STANDARD_SITTEPUTE = <any> 'SITTEPUTEVALG_STANDARD_SITTEPUTE',
         SITTEPUTEVALG_LEGGES_TIL_SEPARAT = <any> 'SITTEPUTEVALG_LEGGES_TIL_SEPARAT',
         SITTEPUTEVALG_HAR_FRA_FOR = <any> 'SITTEPUTEVALG_HAR_FRA_FOR',
-        SITTEPUTEVALG_TRENGER_SITTEPUTE = <any> 'SITTEPUTEVALG_TRENGER_SITTEPUTE'
+        SITTEPUTEVALG_TRENGER_SITTEPUTE = <any> 'SITTEPUTEVALG_TRENGER_SITTEPUTE',
+        LAVERE_RANGERING_BEGRUNNELSE = <any> 'LAVERE_RANGERING_BEGRUNNELSE',
+        KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE = <any> 'KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE'
     }
 }
