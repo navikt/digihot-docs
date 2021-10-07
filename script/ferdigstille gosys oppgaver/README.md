@@ -3,6 +3,7 @@ Oppgavelister i Gosys blir fort fulle når man tester mye.
 Da kan det være nyttig å rydde litt. Det kan gjøres via oppgaveapiet.
 
 1. Generer token via sts (bruk for eksempel srv-digihotproxy brukeren)
+    https://security-token-service.dev.adeo.no/swagger-ui/index.html?configUrl=/api/api-doc/swagger-config#/System%20OIDC%20Token/postOIDCToken
 2. Hent ut åpne oppgaver oppgaver for en gitt bruker. APIet krever aktørid. Den kan hentes fra PDL APIet. 
     For 15084300133 er akørid: 2816991252958
 
