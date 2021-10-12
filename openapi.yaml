@@ -235,6 +235,7 @@ components:
             - SITTEPUTEVALG_TRENGER_SITTEPUTE
             - LAVERE_RANGERING_BEGRUNNELSE
             - KAN_IKKE_HA_TILSVARENDE_BEGRUNNELSE
+            - PERSONLOFTER_VALG_HAR_BEHOV_FOR_SEIL_ELLER_SELE
             - ANNEN_KOMMENTAR
         values:
           type: string
