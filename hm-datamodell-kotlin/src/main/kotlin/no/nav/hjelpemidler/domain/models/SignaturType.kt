@@ -16,7 +16,7 @@ import com.squareup.moshi.Json
 
 /**
 * 
-* Values: BRUKER_BEKREFTER,FULLMAKT
+* Values: BRUKER_BEKREFTER,FULLMAKT,FRITAK_FRA_FULLMAKT
 */
 
 enum class SignaturType(val value: kotlin.String) {
@@ -26,7 +26,10 @@ enum class SignaturType(val value: kotlin.String) {
     BRUKER_BEKREFTER("BRUKER_BEKREFTER"),
 
     @Json(name = "FULLMAKT")
-    FULLMAKT("FULLMAKT");
+    FULLMAKT("FULLMAKT"),
+
+    @Json(name = "FRITAK_FRA_FULLMAKT")
+    FRITAK_FRA_FULLMAKT("FRITAK_FRA_FULLMAKT");
 
 
     /**

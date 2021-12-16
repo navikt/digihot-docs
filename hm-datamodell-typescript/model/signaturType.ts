@@ -14,5 +14,6 @@ import { RequestFile } from './models';
 
 export enum SignaturType {
     BRUKER_BEKREFTER = <any> 'BRUKER_BEKREFTER',
-    FULLMAKT = <any> 'FULLMAKT'
+    FULLMAKT = <any> 'FULLMAKT',
+    FRITAK_FRA_FULLMAKT = <any> 'FRITAK_FRA_FULLMAKT'
 }
