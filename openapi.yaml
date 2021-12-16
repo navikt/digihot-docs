@@ -98,6 +98,7 @@ components:
       enum:
         - BRUKER_BEKREFTER
         - FULLMAKT
+        - FRITAK_FRA_FULLMAKT
           
     Kroppsmaal:
       type: object
