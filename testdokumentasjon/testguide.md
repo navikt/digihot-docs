@@ -85,3 +85,10 @@ En behovsmelding må fylle disse kriteriene for å gå til ny saksbehandlingsfly
 Alle søknader i test går til sentral 2970 - NAV IKT DRIFT
 
 Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://grafana.nais.io/d/4pzzHK6Gz/saksbehandling?orgId=1&var-cluster=team-digihot-influxdb-dev)
+
+***
+
+### Hvordan teste "Be om tilgang" mot Altinn
+Logg på behovsmelding som KREATIV BAMSE `16120101181`, og be om tilgang for `STORÅS OG HESSENG - 910753282`.
+Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som KREATIV BAMSE) som SEDAT KRONJUVEL `15084300133`.
+Bruk BankId med enganskode og passord som beskrevet tidligere.
