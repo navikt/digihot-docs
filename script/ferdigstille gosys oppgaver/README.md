@@ -9,7 +9,7 @@ Da kan det være nyttig å rydde litt. Det kan gjøres via oppgaveapiet.
 ❯ go run gosys-clean.go --help
 Usage of gosys-clean:
   -aktoerId string
-    	Overstyr FNR-tabellen og brukt denne aktør id'en i stede
+    	Overstyr FNR-tabellen og brukt denne aktør iden i stede
   -fnr string
     	Personnummer for brukeren du vil ferdigstille oppgaver for (hvis man setter aktoerID ignoreres dette feltet) (default "15084300133")
   -limit int
