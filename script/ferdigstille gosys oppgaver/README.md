@@ -8,22 +8,24 @@ Da kan det være nyttig å rydde litt. Det kan gjøres via oppgaveapiet.
 ```shell
 ❯ go run gosys-clean.go --help
 Usage of gosys-clean:
-  -aktørId string
-    	Aktør id for brukeren som man skal ferdigstille alle oppgavene for (default "2816991252958")
+  -aktoerId string
+    	Overstyr FNR-tabellen og brukt denne aktør id'en i stede
+  -fnr string
+    	Personnummer for brukeren du vil ferdigstille oppgaver for (hvis man setter aktoerID ignoreres dette feltet) (default "15084300133")
   -limit int
     	Maks antall oppgaver vi ferdigstiller (sortert ASC) (default 320)
   -pw string
-    	Service user password, used to generate STS token
+    	Service-bruker passord, brukt for å generere STS token
   -user string
-    	Service user username, used to generate STS token (default "srv-digihot")
+    	Service bruker brukernavn, brukt for å generere STS token (default "srv-digihot")
 ```
 
 ```shell
 ❯ go run gosys-clean.go --pw "<passordet du finner i Secret Manager (dev) for hm-soknad-api-secret>"
 Ferdigstiller alle oppgaver for aktørId=2816991252958:
 - Genererer STS token for srv-digihot
-- Henter ut listen over alle oppgaver fra Gosys for 2816991252958
-- Ferdigstiller 1 oppgaver for 2816991252958
+- Henter ut listen over alle oppgaver fra Gosys
+- Ferdigstiller 1 oppgaver
 Ferdig!
 ```
 

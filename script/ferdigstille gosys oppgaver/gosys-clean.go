@@ -11,16 +11,32 @@ import (
 )
 
 var (
-	user     = flag.String("user", "srv-digihot", "Service user username, used to generate STS token")
-	pw       = flag.String("pw", "", "Service user password, used to generate STS token")
-	aktoerID = flag.String("aktørId", "2816991252958", "Aktør id for brukeren som man skal ferdigstille alle oppgavene for")
+	aktoerIDFromFNR = map[string]string{
+		"15084300133": "2816991252958",
+	}
+
+	user     = flag.String("user", "srv-digihot", "Service bruker brukernavn, brukt for å generere STS token")
+	pw       = flag.String("pw", "", "Service-bruker passord, brukt for å generere STS token")
+	aktoerID = flag.String("aktoerId", "", "Overstyr FNR-tabellen og brukt denne aktør id'en i stede")
+	fnr      = flag.String("fnr", "15084300133", "Personnummer for brukeren du vil ferdigstille oppgaver for (hvis man setter aktoerID ignoreres dette feltet)")
 	limit    = flag.Int("limit", 320, "Maks antall oppgaver vi ferdigstiller (sortert ASC)")
 )
 
 func main() {
 	flag.Parse()
 
-	fmt.Printf("Ferdigstiller alle oppgaver for aktørId=%s:\n", *aktoerID)
+	targetAktoerID := ""
+	if *aktoerID == "" {
+		if id, ok := aktoerIDFromFNR[*fnr]; ok {
+			targetAktoerID = id
+		} else {
+			panic(fmt.Sprintf("FNR ukjent for skriptet, du kan finne aktør id'en til FNR'et og overstyre med --aktoerId. Kjente FNR/aktørID: %#v", aktoerIDFromFNR))
+		}
+	} else {
+		targetAktoerID = *aktoerID
+	}
+
+	fmt.Printf("Ferdigstiller alle oppgaver for aktørId=%s:\n", targetAktoerID)
 
 	fmt.Printf("- Genererer STS token for %s\n", *user)
 	req, err := http.NewRequest("POST", fmt.Sprintf("https://security-token-service.dev.adeo.no/rest/v1/sts/token?grant_type=client_credentials&scope=openid"), nil)
@@ -49,9 +65,9 @@ func main() {
 
 	stsToken := stsResult["access_token"]
 
-	fmt.Printf("- Henter ut listen over alle oppgaver fra Gosys for %s\n", *aktoerID)
+	fmt.Printf("- Henter ut listen over alle oppgaver fra Gosys\n")
 
-	url := fmt.Sprintf("https://oppgave.dev.intern.nav.no/api/v1/oppgaver?statuskategori=AAPEN&tema=HJE&aktoerId=%s&sorteringsrekkefolge=ASC&sorteringsfelt=ENDRET_TIDSPUNKT&limit=%d", *aktoerID, *limit)
+	url := fmt.Sprintf("https://oppgave.dev.intern.nav.no/api/v1/oppgaver?statuskategori=AAPEN&tema=HJE&aktoerId=%s&sorteringsrekkefolge=ASC&sorteringsfelt=ENDRET_TIDSPUNKT&limit=%d", targetAktoerID, *limit)
 	req, err = http.NewRequest("GET", url, nil)
 	if err != nil {
 		panic(err)
@@ -104,7 +120,7 @@ func main() {
 
 	bufReader := bytes.NewReader(buf)
 
-	fmt.Printf("- Ferdigstiller %d oppgaver for %s\n", len(tasksOut), *aktoerID)
+	fmt.Printf("- Ferdigstiller %d oppgaver\n", len(tasksOut))
 
 	url = fmt.Sprintf("https://oppgave.dev.intern.nav.no/api/v1/oppgaver")
 	req, err = http.NewRequest("PATCH", url, bufReader)
