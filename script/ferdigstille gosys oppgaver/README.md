@@ -2,6 +2,33 @@
 Oppgavelister i Gosys blir fort fulle når man tester mye. 
 Da kan det være nyttig å rydde litt. Det kan gjøres via oppgaveapiet.
 
+
+### Golang script:
+
+```shell
+❯ go run gosys-clean.go --help
+Usage of gosys-clean:
+  -aktørId string
+    	Aktør id for brukeren som man skal ferdigstille alle oppgavene for (default "2816991252958")
+  -limit int
+    	Maks antall oppgaver vi ferdigstiller (sortert ASC) (default 320)
+  -pw string
+    	Service user password, used to generate STS token
+  -user string
+    	Service user username, used to generate STS token (default "srv-digihot")
+```
+
+```shell
+❯ go run gosys-clean.go --pw "<passordet du finner i Secret Manager (dev) for hm-soknad-api-secret>"
+Ferdigstiller alle oppgaver for aktørId=2816991252958:
+- Genererer STS token for srv-digihot
+- Henter ut listen over alle oppgaver fra Gosys for 2816991252958
+- Ferdigstiller 1 oppgaver for 2816991252958
+Ferdig!
+```
+
+### Manuelt:
+
 1. Generer token via sts (bruk for eksempel srv-digihotproxy brukeren)
     https://security-token-service.dev.adeo.no/swagger-ui/index.html?configUrl=/api/api-doc/swagger-config#/System%20OIDC%20Token/postOIDCToken
 2. Hent ut åpne oppgaver oppgaver for en gitt bruker. APIet krever aktørid. Den kan hentes fra PDL APIet. 
