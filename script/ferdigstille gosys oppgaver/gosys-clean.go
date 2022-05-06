@@ -7,7 +7,6 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 )
 
 var (
@@ -94,52 +93,43 @@ func main() {
 
 	tasksIn := (dataIn["oppgaver"]).([]interface{})
 
-	tasksOut := []map[string]interface{}{}
-	for _, t := range tasksIn {
+	fmt.Printf("- Ferdigstiller %d oppgaver\n", len(tasksIn))
+	for idx, t := range tasksIn {
 		task := t.(map[string]interface{})
-		tasksOut = append(tasksOut, map[string]interface{}{
-			"id":      task["id"],
+		result := map[string]interface{}{
+			"id": task["id"],
 			"versjon": task["versjon"],
-		})
-	}
+			"status":   "FERDIGSTILT",
+		}
 
-	if len(tasksOut) == 0 {
-		fmt.Println("Oppgavelisten er allerede tom!")
-		os.Exit(0)
-	}
+		buf, err := json.MarshalIndent(result, "", "    ")
+		if err != nil {
+			log.Fatalln(err)
+		}
 
-	result := map[string]interface{}{
-		"status":   "FERDIGSTILT",
-		"oppgaver": tasksOut,
-	}
+		bufReader := bytes.NewReader(buf)
 
-	buf, err := json.MarshalIndent(result, "", "    ")
-	if err != nil {
-		log.Fatalln(err)
-	}
+		fmt.Printf("\t- Ferdigstiller oppgave %d/%d\n", idx+1, len(tasksIn))
 
-	bufReader := bytes.NewReader(buf)
+		url = fmt.Sprintf("https://oppgave.dev.intern.nav.no/api/v1/oppgaver/%d", int(task["id"].(float64)))
+		req, err = http.NewRequest("PATCH", url, bufReader)
+		if err != nil {
+			panic(err)
+		}
 
-	fmt.Printf("- Ferdigstiller %d oppgaver\n", len(tasksOut))
+		req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", stsToken))
+		req.Header.Add("Accept", "application/json")
+		req.Header.Add("Content-Type", "application/json")
+		req.Header.Add("X-Correlation-ID", "1234")
 
-	url = fmt.Sprintf("https://oppgave.dev.intern.nav.no/api/v1/oppgaver")
-	req, err = http.NewRequest("PATCH", url, bufReader)
-	if err != nil {
-		panic(err)
-	}
+		resp, err = c.Do(req)
+		if err != nil {
+			panic(err)
+		}
 
-	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", stsToken))
-	req.Header.Add("Accept", "application/json")
-	req.Header.Add("Content-Type", "application/json")
-	req.Header.Add("X-Correlation-ID", "1234")
-
-	resp, err = c.Do(req)
-	if err != nil {
-		panic(err)
-	}
-
-	if resp.StatusCode != 200 {
-		panic(fmt.Sprintf("Unexpected status code: %s", resp.Status))
+		if resp.StatusCode != 200 {
+			panic(fmt.Sprintf("Unexpected status code: %s", resp.Status))
+		}
 	}
 
 	fmt.Println("Ferdig!")
