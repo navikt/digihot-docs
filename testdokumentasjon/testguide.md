@@ -65,9 +65,9 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 ***
 
-### Ny Saksbehandlingsflate 
+### Ny Saksbehandlingsflate (Hotsak)
 
-[Gå til ny saksbehandlingsflate](https://hm-saksbehandling.dev.intern.nav.no/)
+[Gå til Hotsak](https://hotsak.dev.intern.nav.no)
 
 Logg inn med en [saksbehandler](#saksbehandlere)
 
