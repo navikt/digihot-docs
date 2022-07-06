@@ -23,6 +23,8 @@ Det finnes per nå tre grupper med testbrukere
   | 07480966982 | SITRONGUL OVN   | 12 ÅR | BARN     | 09418208349 |
   | 17500582154 | USTABIL ALDER   | 16 ÅR | VERGE    | 09418208349 |
   | 25470456313 | LEGITIM PINSETT | 17 ÅR | FULLMAKT | 09418208349 |
+  
+  Merk: Sitrongul Ovn har kontrakt om delt bosted hos sin mor.
 
 - #### Saksbehandlere
 
