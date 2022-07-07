@@ -26,6 +26,7 @@ Det finnes per nå fire grupper med testbrukere
   | 21500887483 | HUMORISTISK VALMUE | 13 ÅR | UKJENTADDR | 02437713408 |
   
   - Merk: Sitrongul Ovn har kontrakt om delt bosted hos sin mor.
+  - Merk: Legitim Pinsett blir 18år før lansering av barnebrille-løsningen!
   - Merk: Humoristik Valmue har en mor uten arbeid og ukjent adresse (men er ansett som bosatt og skal kunne søke).
 
 - #### Saksbehandlere
