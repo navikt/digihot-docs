@@ -1,6 +1,6 @@
 ## Test guide DigiHOT
 
-Det finnes per nå tre grupper med testbrukere
+Det finnes per nå fire grupper med testbrukere
 
 - #### Hjelpemiddelformidlere
 
