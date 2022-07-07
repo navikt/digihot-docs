@@ -25,8 +25,8 @@ Det finnes per nå tre grupper med testbrukere
   | 25470456313 | LEGITIM PINSETT    | 17 ÅR | FULLMAKT   | 09418208349 |
   | 21500887483 | HUMORISTISK VALMUE | 13 ÅR | UKJENTADDR | 02437713408 |
   
-  Merk: Sitrongul Ovn har kontrakt om delt bosted hos sin mor.
-  Merk: Humoristik Valmue har en mor uten arbeid og ukjent adresse (men er ansett som bosatt og skal kunne søke).
+  - Merk: Sitrongul Ovn har kontrakt om delt bosted hos sin mor.
+  - Merk: Humoristik Valmue har en mor uten arbeid og ukjent adresse (men er ansett som bosatt og skal kunne søke).
 
 - #### Saksbehandlere
 
