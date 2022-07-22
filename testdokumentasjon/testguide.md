@@ -20,6 +20,7 @@ Det finnes per nå fire grupper med testbrukere
 
   | FNR         | NAVN               | ALDER | TYPE       | FORESATT    |
   |-------------|--------------------|-------|------------|-------------|
+  | 20071359671 | TAKTFULL KALKULATOR | 9 ÅR | BARN       | 
   | 07480966982 | SITRONGUL OVN      | 12 ÅR | BARN       | 09418208349 |
   | 17500582154 | USTABIL ALDER      | 16 ÅR | VERGE      | 09418208349 |
   | 25470456313 | LEGITIM PINSETT    | 17 ÅR | FULLMAKT   | 09418208349 |
