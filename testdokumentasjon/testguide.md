@@ -87,6 +87,19 @@ Logg inn med en [saksbehandler](#saksbehandlere)
 
 ***
 
+### Barnebriller 
+
+#### [Dev](https://brille.dev.nav.no/hjelpemidler/barnebriller)
+1. Logg inn med [SEDAT KRONJUVEL](#hjelpemiddelformidlere)
+2. Slå opp på et [barn](#barnebrille-barn)
+
+#### [Labs](https://brille.labs.nais.io/hjelpemidler/barnebriller/)
+I labs kan man slå opp på et hvilket som helst fnr. så lenge det er gyldig.
+
+For å teste et "barn" som ikke oppfyller alle vilkårene kan man bruke fnr. `08887799742`
+
+***
+
 ###  Hvordan opprette en behovsmelding som dukker opp i ny saksbehandlingsløsning?
 
 
