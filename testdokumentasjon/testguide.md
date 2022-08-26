@@ -61,6 +61,9 @@ versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 | 27116920269 | Formidler slår opp på seg selv |
 | 28070477086 | Bruker er under 18 år          |
 
+#### Bestilling
+I labs kan man få en bestilling ved å legge inn Sedat som hjelpemiddelbruker, og ellers sørge for at saken oppfyller kriteriene for å være en bestilling.
+
 ***
 
 
