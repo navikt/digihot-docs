@@ -84,12 +84,12 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
 ### Dine hjelpemiddelsøknader (for formidlere)
 
-#### dev
+#### Dev
 [Gå til Dine hjelpemiddelsøknader i dev](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 
-#### labs og prod-mirror
+#### Labs og prod-mirror
 [Gå til Dine hjelpemiddelsøknader i labs](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/formidler/)
 
 [Gå til Dine hjelpemiddelsøknader i prod-mirror](https://hjelpemidlerdigitalsoknad-prod-mirror.labs.nais.io/hjelpemidler/formidler/)
