@@ -50,7 +50,7 @@ Det finnes per nå fire grupper med testbrukere
 
 [Gå til behovsmelding](https://hjelpemidler.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
 
-Logg inn med en [formidler](#hjelpemiddelformidlere)
+Logg inn med en [formidler](#hjelpemiddelformidlere) eller en [bestiller](#bestillere)
 
 Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https://dolly.nais-dev-fss.adeo.no/).
 Merk at for å se "Dine Hjelpemidler" må brukeren det søkes for være tilknyttet idporten, og om dette er
@@ -84,9 +84,16 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
 ### Dine hjelpemiddelsøknader (for formidlere)
 
-[Gå til Dine hjelpemiddelsøknader](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
+#### dev
+[Gå til Dine hjelpemiddelsøknader i dev](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
+
+#### labs og prod-mirror
+[Gå til Dine hjelpemiddelsøknader i labs](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/formidler/)
+
+[Gå til Dine hjelpemiddelsøknader i prod-mirror](https://hjelpemidlerdigitalsoknad-prod-mirror.labs.nais.io/hjelpemidler/formidler/)
+
 ***
 
 ### Ny Saksbehandlingsflate (Hotsak)
