@@ -7,6 +7,12 @@ Det finnes per nå fire grupper med testbrukere
   | FNR         | NAVN            | KOMMUNE | ENGANGSKODE | PASSORD  |
   |-------------|-----------------|---------|-------------|----------|
   | 15084300133 | SEDAT KRONJUVEL | SULDAL  | otp         | qwer1234 |
+  
+- ### Bestillere
+
+  | FNR         | NAVN                | KOMMUNE          | INNLOGGING   |
+  |-------------|---------------------|------------------|--------------|
+  | 26838899624 |	SKAPENDE SVIGERINNE | VESTRE JAKOBSELV | Bruk Test-ID |
 
 - #### Hjelpemiddelbrukere
 
@@ -64,7 +70,7 @@ versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 
 #### Bestilling
 I labs kan man få en bestilling ved å legge inn Sedat som hjelpemiddelbruker, og ellers sørge for at saken oppfyller kriteriene for å være en bestilling.
-
+I dev kan man bruke "Debug"-panelet for å styre roller, eller logge inn med SKAPENDE SVIGERINNE og også legge henne inn som hjelpemiddelbruker.
 ***
 
 
