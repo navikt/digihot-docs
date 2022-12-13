@@ -63,8 +63,7 @@ versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 
 | FNR         | SCENARIO                                                           |
 |-------------|--------------------------------------------------------------------|
-| 11098600142 | Request for å hente bruker feiler                                  |
-| 11098600142 | Bruker kan ikke hentes fra PDL                                     |
+| 11098600142 | Request for å hente bruker feiler (bruker kan ikke hentes fra PDL) |
 | 20071359671 | Bruker tilhører en annen kommune                                   |
 | 27116920269 | Formidler slår opp på seg selv                                     |
 | 28070477086 | Bruker er under 18 år                                              |
