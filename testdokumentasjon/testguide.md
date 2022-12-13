@@ -66,8 +66,10 @@ versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 | 11098600142 | Request for å hente bruker feiler (bruker kan ikke hentes fra PDL) |
 | 20071359671 | Bruker tilhører en annen kommune                                   |
 | 27116920269 | Formidler slår opp på seg selv                                     |
-| 28070477086 | Bruker er under 18 år                                              |
 | 10127622634 | Bruker kan ikke få bestilling (gjelder kun for rolle=BESTILLER)    |
+| 28070477086 | Bruker er under 18 år                                              |
+| 09097400366 | Bruker kan ikke varsles                                            |
+| 09097400447 | Bruker har reservert seg mot varsling                              |
 
 #### Bestilling
 I labs kan man få en bestilling ved å legge inn Sedat som hjelpemiddelbruker, og ellers sørge for at saken oppfyller kriteriene for å være en bestilling.
