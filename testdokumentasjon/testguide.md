@@ -71,6 +71,7 @@ versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 | 28070477086 | Bruker er under 18 år                                              |
 | 09097400366 | Bruker kan ikke varsles                                            |
 | 09097400447 | Bruker har reservert seg mot varsling                              |
+| 31037526749 | Brukeroppslag returnerer en ufullstendig adresse (fra PDL)         |
 
 #### Bestilling
 I labs kan man få en bestilling ved å legge inn Sedat som hjelpemiddelbruker, og ellers sørge for at saken oppfyller kriteriene for å være en bestilling.
