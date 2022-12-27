@@ -138,8 +138,8 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 ***
 
 ### Hvordan teste "Be om tilgang" mot Altinn
-(Bruk BankId med enganskode og passord som beskrevet tidligere.)
+(Bruk TestID ved innlogging)
 
-- Logg på behovsmelding som KREATIV BAMSE `16120101181`, og be om tilgang for `STORÅS OG HESSENG - 910753282`.
-- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som KREATIV BAMSE) som SEDAT KRONJUVEL `15084300133`.
+- Logg på behovsmelding som EGOISTISK PUMPE `22924498351`, og be om tilgang for `STORÅS OG HESSENG - 910753282`.
+- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som EGOISTISK PUMPE) som SEDAT KRONJUVEL `15084300133`.
 
