@@ -140,6 +140,6 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 ### Hvordan teste "Be om tilgang" mot Altinn
 (Bruk TestID ved innlogging)
 
-- Logg på behovsmelding som EGOISTISK PUMPE `22924498351`, og be om tilgang for `STORÅS OG HESSENG - 910753282`.
-- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som EGOISTISK PUMPE) som BERØMT AKTIVITET `26848497710`.
+- Logg på behovsmelding som UNØYAKTIG KALKULATOR `24884099060`, og be om tilgang for `KURSIV MODIG APE - 312787350`.
+- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som UNØYAKTIG KALKULATOR) som BERØMT AKTIVITET `26848497710`.
 
