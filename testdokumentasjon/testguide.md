@@ -4,9 +4,9 @@ Det finnes per nå fire grupper med testbrukere
 
 - #### Hjelpemiddelformidlere
 
-  | FNR         | NAVN            | KOMMUNE | ENGANGSKODE | PASSORD  |
-  |-------------|-----------------|---------|-------------|----------|
-  | 15084300133 | SEDAT KRONJUVEL | SULDAL  | otp         | qwer1234 |
+  | FNR         | NAVN            | KOMMUNE | INNLOGGING   |
+  |-------------|-----------------|---------|--------------|
+  | 26848497710 | BERØMT AKTIVITET| HASVIK  | Bruk Test-ID |
   
 - #### Bestillere
 
@@ -18,7 +18,7 @@ Det finnes per nå fire grupper med testbrukere
 
   | FNR         | NAVN            | KOMMUNE | ENGANGSKODE | PASSORD  |
   |-------------|-----------------|---------|-------------|----------|
-  | 15084300133 | SEDAT KRONJUVEL | SULDAL  | otp         | qwer1234 |
+  | 26848497710 | BERØMT AKTIVITET| HASVIK  | Bruk Test-ID | N/A
   | 16120101181 | KREATIV BAMSE   | SULDAL  | otp         | qwer1234 |
   | 10127622634 | KRAFTIG ERT     | SULDAL  | otp         | qwer1234 |
   
@@ -141,5 +141,5 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 (Bruk TestID ved innlogging)
 
 - Logg på behovsmelding som EGOISTISK PUMPE `22924498351`, og be om tilgang for `STORÅS OG HESSENG - 910753282`.
-- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som EGOISTISK PUMPE) som SEDAT KRONJUVEL `15084300133`.
+- Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som EGOISTISK PUMPE) som BERØMT AKTIVITET `26848497710`.
 
