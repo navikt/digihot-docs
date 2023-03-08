@@ -156,12 +156,12 @@ Velg tema HJE og skjema "Tilskudd ved kjøp av briller til barn".
 
 ##### Dolly personer til test
 
- | FNR         | NAVN               | ALDER | TYPE       | FORESATT    |
-  |-------------|-------------------|----|------------|-------------|
-  | 17458745633 | Alfabetisk Algoritme | 35 | FORELDER | |
-	| 14460989362  | Eksplosiv Tunge   |	13 | BARN | 17458745633  |
-	| 07511697152  | Akseptabel Bror   |	6  | BARN | 17458745633  |
-	| 19501857435  | Usedvanlig Fil    | 4  | BARN | 17458745633  |
-  | 03441558383 | Nedsnødd Journalist | 7 | BARN, KODE 6 | |
+  | FNR         | NAVN               | ALDER | TYPE       | FORESATT     |
+  |-------------|----------------------|----|--------------|-------------|
+  | 17458745633 | Alfabetisk Algoritme | 35 | FORELDER     |             |
+  | 14460989362 | Eksplosiv Tunge      | 13 | BARN         | 17458745633 |
+  | 07511697152 | Akseptabel Bror      | 6  | BARN         | 17458745633 |
+  | 19501857435 | Usedvanlig Fil       | 4  | BARN         | 17458745633 |
+  | 03441558383 | Nedsnødd Journalist  | 7  | BARN, KODE 6 |             |
 
   
