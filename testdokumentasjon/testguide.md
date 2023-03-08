@@ -143,3 +143,15 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 - Logg på behovsmelding som UNØYAKTIG KALKULATOR `24884099060`, og be om tilgang for `KURSIV MODIG APE - 312787350`.
 - Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som UNØYAKTIG KALKULATOR) som BERØMT AKTIVITET `26848497710`.
 
+#### Manuelle brillesøknader 
+
+For å lage journalposter som skal journalføres i Hotsak kan man bruke testdata-frontend applikasjonen. 
+https://testdata-frontend.dev.intern.nav.no/
+
+Logg på med f_z994377.e_z994377@trygdeetaten.no og passord SortBil3 
+
+Fødselsnummer som legges inn i skjermbildet, vil være fødselsnummer til personen dokumentet registeres på. For å få det mest mulig reelt, kan man legge inn fnr til barn fra Dolly der. 
+
+Velg tema HJE og skjema "Tilskudd ved kjøp av briller til barn".
+
+
