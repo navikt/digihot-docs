@@ -143,7 +143,7 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 - Logg på behovsmelding som UNØYAKTIG KALKULATOR `24884099060`, og be om tilgang for `KURSIV MODIG APE - 312787350`.
 - Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som UNØYAKTIG KALKULATOR) som BERØMT AKTIVITET `26848497710`.
 
-#### Manuelle brillesøknader 
+### Manuelle brillesøknader 
 
 For å lage journalposter som skal journalføres i Hotsak kan man bruke testdata-frontend applikasjonen. 
 https://testdata-frontend.dev.intern.nav.no/
