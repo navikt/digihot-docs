@@ -164,5 +164,6 @@ Velg tema HJE og skjema "Tilskudd ved kjøp av briller til barn".
   | 07511697152 | Akseptabel Bror      | 6  | BARN         | 17458745633 |
   | 19501857435 | Usedvanlig Fil       | 4  | BARN         | 17458745633 |
   | 03441558383 | Nedsnødd Journalist  | 7  | BARN, KODE 6 |             |
+  | 08511455511 | Usensuell Sekretær   | 8  | BARN, SKJERMING fra 1.3.2023 |             |
 
   
