@@ -88,17 +88,17 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
 ***
 
-### Dine hjelpemiddelsøknader (for formidlere)
+### Innsenders oversikt over innsendte behovsmeldinger
 
 #### Dev
-[Gå til Dine hjelpemiddelsøknader i dev](https://hjelpemidler.dev.nav.no/hjelpemidler/formidler/)
+[Gå til innsenders oversikt i dev](https://hjelpemidler.intern.dev.nav.no/hjelpemidler/formidler)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 #### Ekstern (tidligere labs) og prod-mirror
-[Gå til Dine hjelpemiddelsøknader i ekstern](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/formidler/)
+[Gå til innsenders oversikt i ekstern](https://hjelpemidler.ekstern.dev.nav.no/hjelpemidler/formidler)
 
-[Gå til Dine hjelpemiddelsøknader i prod-mirror](https://hjelpemidlerdigitalsoknad-prod-mirror.labs.nais.io/hjelpemidler/formidler/)
+[Gå til innsenders oversikt i prod-mirror](https://hjelpemidler-prod-mirror.ekstern.dev.nav.no/hjelpemidler/formidler)
 
 ***
 
