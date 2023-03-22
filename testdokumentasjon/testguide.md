@@ -50,7 +50,7 @@ Det finnes per nå fire grupper med testbrukere
 
 ### Behovsmelding 
 
-[Gå til behovsmelding](https://hjelpemidler.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
+[Gå til behovsmelding](https://hjelpemidler.intern.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler/)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere) eller en [bestiller](#bestillere)
 
@@ -58,9 +58,9 @@ Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https:
 Merk at for å se "Dine Hjelpemidler" må brukeren det søkes for være tilknyttet idporten, og om dette er
 ønskelig må man søke på vegne av en av disse [hjelpemiddelbrukerne](#hjelpemiddelbrukere)
 
-#### Labs og prod-mirror
-I [Labs](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/digitalsoknadhjelpemidler/) og 
-[Prod-mirror](https://hjelpemidlerdigitalsoknad-prod-mirror.labs.nais.io/hjelpemidler/digitalsoknadhjelpemidler/) 
+#### Ekstern (tidligere labs) og prod-mirror
+I [Ekstern](https://hjelpemidler.ekstern.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler) og 
+[Prod-mirror](https://hjelpemidler-prod-mirror.ekstern.dev.nav.no/hjelpemidler/digitalsoknadhjelpemidler) 
 versjonene kan man slå opp på følgende fnr. for å teste visse scenario:
 
 | FNR         | SCENARIO                                                           |
@@ -82,7 +82,7 @@ I dev kan man bruke "Debug"-panelet for å styre roller, eller logge inn med SKA
 
 ### Dine hjelpemidler 
 
-[Gå til Dine hjelpemidler](https://hjelpemidler.dev.nav.no/hjelpemidler/dinehjelpemidler/)
+[Gå til Dine hjelpemidler](https://hjelpemidler.intern.dev.nav.no/hjelpemidler/dinehjelpemidler/)
 
 Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
@@ -95,8 +95,8 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 
-#### Labs og prod-mirror
-[Gå til Dine hjelpemiddelsøknader i labs](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/formidler/)
+#### Ekstern (tidligere labs) og prod-mirror
+[Gå til Dine hjelpemiddelsøknader i ekstern](https://hjelpemidlerdigitalsoknad.labs.nais.io/hjelpemidler/formidler/)
 
 [Gå til Dine hjelpemiddelsøknader i prod-mirror](https://hjelpemidlerdigitalsoknad-prod-mirror.labs.nais.io/hjelpemidler/formidler/)
 
@@ -112,11 +112,11 @@ Logg inn med en [saksbehandler](#saksbehandlere)
 
 ### Barnebriller 
 
-#### [Dev](https://brille.dev.nav.no/hjelpemidler/barnebriller)
+#### [Dev](https://brille.intern.dev.nav.no/hjelpemidler/barnebriller)
 1. Logg inn med [SEDAT KRONJUVEL](#hjelpemiddelformidlere)
 2. Slå opp på et [barn](#barnebrille-barn)
 
-#### [Labs](https://brille.labs.nais.io/hjelpemidler/barnebriller/)
+#### [Labs](https://brille-labs.ekstern.dev.nav.no/hjelpemidler/barnebriller)
 I labs kan man slå opp på et hvilket som helst fnr. så lenge det er gyldig.
 
 For å teste et "barn" som ikke oppfyller alle vilkårene kan man bruke fnr. `08887799742`
