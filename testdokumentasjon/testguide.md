@@ -88,17 +88,17 @@ Logg inn med en [hjelpemiddelbruker](#hjelpemiddelbrukere)
 
 ***
 
-### Innsenders oversikt over innsendte behovsmeldinger
+### Dine hjelpemiddelsaker (innsenders oversikt over innsendte behovsmeldinger)
 
 #### Dev
-[Gå til innsenders oversikt i dev](https://hjelpemidler.intern.dev.nav.no/hjelpemidler/formidler)
+[Gå til Dine hjelpemiddelsaker i dev](https://hjelpemidler.intern.dev.nav.no/hjelpemidler/formidler)
 
 Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 #### Ekstern (tidligere labs) og prod-mirror
-[Gå til innsenders oversikt i ekstern](https://hjelpemidler.ekstern.dev.nav.no/hjelpemidler/formidler)
+[Gå til Dine hjelpemiddelsaker i ekstern](https://hjelpemidler.ekstern.dev.nav.no/hjelpemidler/formidler)
 
-[Gå til innsenders oversikt i prod-mirror](https://hjelpemidler-prod-mirror.ekstern.dev.nav.no/hjelpemidler/formidler)
+[Gå til Dine hjelpemiddelsaker i prod-mirror](https://hjelpemidler-prod-mirror.ekstern.dev.nav.no/hjelpemidler/formidler)
 
 ***
 
