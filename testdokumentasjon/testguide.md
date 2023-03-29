@@ -44,6 +44,7 @@ Det finnes per nå fire grupper med testbrukere
   | f_z994074.e_z994074@trygdeetaten.no | f_z994074.e_z994074 | 2970 - NAV IKT DRIFT  | SortBil3 |
   | f_z994377.e_z994377@trygdeetaten.no | f_z994377.e_z994377 | 2970 - NAV IKT DRIFT  | SortBil3 |
   | f_z994032.e_z994032@trygdeetaten.no | f_z994032.e_z994032 | 2103 - NAV VIKAFOSSEN | SortBil3 |
+  | f_z994951.e_z994951@trygdeetaten.no | f_z994951.e_z994951 | 2103 - NAV VIKAFOSSEN | SortBil3 |
 
 
 ***
