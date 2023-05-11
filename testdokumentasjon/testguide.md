@@ -115,7 +115,7 @@ Logg inn med en [saksbehandler](#saksbehandlere)
 ### Barnebriller 
 
 #### [Dev](https://brille.intern.dev.nav.no/hjelpemidler/barnebriller)
-1. Logg inn med [SEDAT KRONJUVEL](#hjelpemiddelformidlere)
+1. Logg inn med [SEDAT KRONJUVEL](#hjelpemiddelformidlere) eller [BERØMT AKTIVITET](#hjelpemiddelbrukere)
 2. Slå opp på et [barn](#barnebrille-barn)
 
 #### [Labs](https://brille-labs.ekstern.dev.nav.no/hjelpemidler/barnebriller)
@@ -145,6 +145,8 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 
 - Logg på behovsmelding som UNØYAKTIG KALKULATOR `24884099060`, og be om tilgang for `KURSIV MODIG APE - 312787350`.
 - Logg på i [Altinn testmiljø tt02](https://tt02.altinn.no) i en annen nettleser eller inkognito vindu (eller så blir du automatisk logget inn som UNØYAKTIG KALKULATOR) som BERØMT AKTIVITET `26848497710`.
+
+***
 
 ### Manuelle brillesøknader 
 
