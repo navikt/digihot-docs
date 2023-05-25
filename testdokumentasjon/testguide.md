@@ -153,7 +153,7 @@ Man kan se hvorfor en søknad evt. går til gammel flyt i [grafana](https://graf
 ### Manuelle brillesøknader 
 
 For å lage journalposter som skal journalføres i Hotsak kan man bruke testdata-frontend applikasjonen. 
-https://testdata-frontend.dev.intern.nav.no/
+https://testdata-frontend.intern.dev.nav.no/
 
 Logg på med f_z994377.e_z994377@trygdeetaten.no og passord SortBil3 
 
