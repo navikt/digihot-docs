@@ -21,7 +21,16 @@ Det finnes per nå fire grupper med testbrukere
   | 26848497710 | BERØMT AKTIVITET| HASVIK  | Bruk Test-ID | N/A
   | 16120101181 | KREATIV BAMSE   | SULDAL  | otp         | qwer1234 |
   | 10127622634 | KRAFTIG ERT     | SULDAL  | otp         | qwer1234 |
-  
+
+
+ #### Optikere
+
+  | FNR         | NAVN                | KOMMUNE | ENGANGSKODE | PASSORD  |
+    |-------------|---------------------|---------|-------------|----------|
+    | 26848497710 | BERØMT AKTIVITET    | HASVIK  | Bruk Test-ID | N/A |
+    | 19879898431 | ØKOLOGISK GLADIATOR | SANDE   | Bruk Test-ID | N/A |
+
+
 - #### Barnebrille-barn
 
   | FNR         | NAVN               | ALDER | TYPE       | FORESATT    |
