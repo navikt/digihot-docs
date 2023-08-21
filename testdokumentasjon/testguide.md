@@ -14,6 +14,12 @@ Det finnes per nå fire grupper med testbrukere
 | ----------- | ------------------- | ---------------- | ------------ |
 | 26838899624 | SKAPENDE SVIGERINNE | VESTRE JAKOBSELV | Bruk Test-ID |
 
+#### Brukerpassbrukere
+
+| FNR         | NAVN             | KOMMUNE | INNLOGGING   |
+| ----------- | ---------------- | ------- | ------------ |
+| 03847797958 | NONFIGURATIV SAU | VADSØ   | Bruk Test-ID |
+
 #### Hjelpemiddelbrukere
 
 | FNR         | NAVN             | KOMMUNE | ENGANGSKODE  | PASSORD  |
