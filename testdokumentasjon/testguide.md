@@ -4,9 +4,9 @@ Det finnes per nå fire grupper med testbrukere
 
 #### Hjelpemiddelformidlere
 
-| FNR         | NAVN             | KOMMUNE | INNLOGGING   |
-| ----------- | ---------------- | ------- | ------------ |
-| 26848497710 | BERØMT AKTIVITET | HASVIK  | Bruk Test-ID |
+| FNR         | NAVN               | KOMMUNE | INNLOGGING   |
+| ----------- | ------------------ | ------- | ------------ |
+| 13820599335 | KVADRATISK FAKTURA | STAD    | Bruk Test-ID |
 
 #### Bestillere
 
@@ -22,11 +22,10 @@ Det finnes per nå fire grupper med testbrukere
 
 #### Hjelpemiddelbrukere
 
-| FNR         | NAVN             | KOMMUNE | ENGANGSKODE  | PASSORD  |
-| ----------- | ---------------- | ------- | ------------ | -------- |
-| 26848497710 | BERØMT AKTIVITET | HASVIK  | Bruk Test-ID | N/A      |
-| 16120101181 | KREATIV BAMSE    | SULDAL  | otp          | qwer1234 |
-| 10127622634 | KRAFTIG ERT      | SULDAL  | otp          | qwer1234 |
+| FNR         | NAVN               | KOMMUNE | INNLOGGING   | KOMMENTAR  |
+| ----------- | ------------------ | ------- | ------------ | ---------- |
+| 13820599335 | KVADRATISK FAKTURA | STAD    | Bruk Test-ID | 18 år      |
+| 26928698180 | FROM ANDRIK        | STAD    | Bruk Test-ID | 37 år      |
 
 #### Optikere
 
