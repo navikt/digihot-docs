@@ -27,6 +27,12 @@ Det finnes per nå fire grupper med testbrukere
 | 13820599335 | KVADRATISK FAKTURA | STAD    | Bruk Test-ID | 18 år      |
 | 26928698180 | FROM ANDRIK        | STAD    | Bruk Test-ID | 37 år      |
 
+#### Teknikere
+
+| FNR         | NAVN                | KOMMUNE | ENGANGSKODE  | PASSORD |
+| ----------- | ------------------- | ------- | ------------ | ------- |
+| 26848497710 | BERØMT AKTIVITET    | HASVIK  | Bruk Test-ID | N/A     |
+
 #### Optikere
 
 | FNR         | NAVN                | KOMMUNE | ENGANGSKODE  | PASSORD |
