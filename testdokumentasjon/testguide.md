@@ -129,7 +129,7 @@ Logg inn med en [formidler](#hjelpemiddelformidlere)
 
 ### Ny Saksbehandlingsflate (Hotsak)
 
-[Gå til Hotsak](https://hotsak.dev.intern.nav.no)
+[Gå til Hotsak](https://hotsak.intern.dev.nav.no)
 
 Logg inn med en [saksbehandler](#saksbehandlere)
 
