@@ -7,6 +7,7 @@ Det finnes per nå fire grupper med testbrukere
 | FNR         | NAVN               | KOMMUNE | INNLOGGING   |
 | ----------- | ------------------ | ------- | ------------ |
 | 13820599335 | KVADRATISK FAKTURA | STAD    | Bruk Test-ID |
+| 24865697437 | LIDENSKAPELIG FAGOTT | TRONDHEIM    | Bruk Test-ID |
 
 #### Bestillere
 
