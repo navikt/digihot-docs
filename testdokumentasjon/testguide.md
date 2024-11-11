@@ -196,3 +196,11 @@ Velg tema HJE og skjema "Tilskudd ved kjøp av briller til barn".
 | 03441558383 | Nedsnødd Journalist  | 7     | BARN, KODE 6                      |             |
 | 30487721626 | Flat Pistol          | 45    | FORELDER, SKJERMET fra 14.03.2023 |             |
 | 26480984314 | Bra Domstol          | 13    | BARN                              | 30487721626 |
+
+---
+
+### Gosys
+
+[Gå til Gosys Q2](https://gosys-q2.dev.intern.nav.no/gosys/)
+
+Logg inn med en [saksbehandler](#saksbehandlere)
