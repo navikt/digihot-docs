@@ -76,7 +76,7 @@ Det finnes per nå fire grupper med testbrukere
 
 Logg inn med en [formidler](#hjelpemiddelformidlere) eller en [bestiller](#bestillere)
 
-Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https://dolly.nais-dev-fss.adeo.no/).
+Man kan søke på vegne av enhver testbruker som er opprettet via [Dolly](https://dolly.ekstern.dev.nav.no/).
 Merk at for å se "Dine Hjelpemidler" må brukeren det søkes for være tilknyttet idporten, og om dette er
 ønskelig må man søke på vegne av en av disse [hjelpemiddelbrukerne](#hjelpemiddelbrukere)
 
@@ -181,7 +181,7 @@ https://testdata-frontend.intern.dev.nav.no/
 
 Logg på med f_z994377.e_z994377@trygdeetaten.no og passord SortBil3
 
-Fødselsnummer som legges inn i skjermbildet, vil være fødselsnummer til personen dokumentet registeres på. For å få det mest mulig reelt, kan man legge inn fnr til barn fra Dolly der.
+Fødselsnummer som legges inn i skjermbildet, vil være fødselsnummer til personen dokumentet registeres på. For å få det mest mulig reelt, kan man legge inn fnr til barn fra [Dolly](https://dolly.ekstern.dev.nav.no/) der.
 
 Velg tema HJE og skjema "Tilskudd ved kjøp av briller til barn".
 
